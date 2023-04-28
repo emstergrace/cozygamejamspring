@@ -1,2 +1,1 @@
 # cozygamejamspring
-discord test

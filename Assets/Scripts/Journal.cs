@@ -12,12 +12,17 @@ public class Journal : MonoBehaviour
         PlayerInputActions inputActions = new PlayerInputActions();
         inputActions.Journal.Enable();
         inputActions.Journal.OpenJournal.performed += OpenJounal;
+        inputActions.Journal.CloseJournal.performed += CloseJounal;
     }
 
 
     public void OpenJounal(InputAction.CallbackContext obj)
     {
-        Debug.Log("called");
         journal_Panel.SetActive(!journal_Panel.activeSelf);
+    }
+
+    public void CloseJounal(InputAction.CallbackContext obj)
+    {
+        journal_Panel.SetActive(false);
     }
 }

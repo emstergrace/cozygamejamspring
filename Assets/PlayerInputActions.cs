@@ -429,6 +429,15 @@ namespace UnityEngine.InputSystem
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""CloseJournal"",
+                    ""type"": ""Button"",
+                    ""id"": ""8403fa9a-cbc3-4f54-a8db-f8868cffde02"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -440,6 +449,17 @@ namespace UnityEngine.InputSystem
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""OpenJournal"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ff5e070b-107f-40c0-a18e-a5b8457af30f"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""CloseJournal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -526,6 +546,7 @@ namespace UnityEngine.InputSystem
             // Journal
             m_Journal = asset.FindActionMap("Journal", throwIfNotFound: true);
             m_Journal_OpenJournal = m_Journal.FindAction("OpenJournal", throwIfNotFound: true);
+            m_Journal_CloseJournal = m_Journal.FindAction("CloseJournal", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -744,11 +765,13 @@ namespace UnityEngine.InputSystem
         private readonly InputActionMap m_Journal;
         private List<IJournalActions> m_JournalActionsCallbackInterfaces = new List<IJournalActions>();
         private readonly InputAction m_Journal_OpenJournal;
+        private readonly InputAction m_Journal_CloseJournal;
         public struct JournalActions
         {
             private @PlayerInputActions m_Wrapper;
             public JournalActions(@PlayerInputActions wrapper) { m_Wrapper = wrapper; }
             public InputAction @OpenJournal => m_Wrapper.m_Journal_OpenJournal;
+            public InputAction @CloseJournal => m_Wrapper.m_Journal_CloseJournal;
             public InputActionMap Get() { return m_Wrapper.m_Journal; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -761,6 +784,9 @@ namespace UnityEngine.InputSystem
                 @OpenJournal.started += instance.OnOpenJournal;
                 @OpenJournal.performed += instance.OnOpenJournal;
                 @OpenJournal.canceled += instance.OnOpenJournal;
+                @CloseJournal.started += instance.OnCloseJournal;
+                @CloseJournal.performed += instance.OnCloseJournal;
+                @CloseJournal.canceled += instance.OnCloseJournal;
             }
 
             private void UnregisterCallbacks(IJournalActions instance)
@@ -768,6 +794,9 @@ namespace UnityEngine.InputSystem
                 @OpenJournal.started -= instance.OnOpenJournal;
                 @OpenJournal.performed -= instance.OnOpenJournal;
                 @OpenJournal.canceled -= instance.OnOpenJournal;
+                @CloseJournal.started -= instance.OnCloseJournal;
+                @CloseJournal.performed -= instance.OnCloseJournal;
+                @CloseJournal.canceled -= instance.OnCloseJournal;
             }
 
             public void RemoveCallbacks(IJournalActions instance)
@@ -849,6 +878,7 @@ namespace UnityEngine.InputSystem
         public interface IJournalActions
         {
             void OnOpenJournal(InputAction.CallbackContext context);
+            void OnCloseJournal(InputAction.CallbackContext context);
         }
     }
 }

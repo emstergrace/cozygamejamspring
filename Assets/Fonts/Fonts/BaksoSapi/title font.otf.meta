@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 65be050c57328364eab823ae5e8f1887
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Bakso Sapi
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3795d43dcf67253428e4ae7457b529a2, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 2a29f8cbcf0360547bd90de0fba228ef
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Fairy Clovers
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 25b796fc05bee5941bce137297a93c0b, type: 3}
+  - {fileID: 12800000, guid: 8868b2a2d8b0b2942ab8cac745220e93, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -9,10 +9,10 @@ FBXHeaderExtension:  {
 		Year: 2023
 		Month: 4
 		Day: 29
-		Hour: 6
-		Minute: 15
-		Second: 15
-		Millisecond: 487
+		Hour: 15
+		Minute: 6
+		Second: 27
+		Millisecond: 342
 	}
 	Creator: "FBX SDK/FBX Plugins version 2020.2.3"
 	OtherFlags:  {
@@ -37,13 +37,13 @@ FBXHeaderExtension:  {
 			P: "Original|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "Original|ApplicationName", "KString", "", "", "Maya"
 			P: "Original|ApplicationVersion", "KString", "", "", "2022"
-			P: "Original|DateTime_GMT", "DateTime", "", "", "28/04/2023 20:15:15.486"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "29/04/2023 05:06:27.341"
 			P: "Original|FileName", "KString", "", "", "G:\CozySpringJam\Assets\SM_Kokio.fbx"
 			P: "LastSaved", "Compound", "", ""
 			P: "LastSaved|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "LastSaved|ApplicationName", "KString", "", "", "Maya"
 			P: "LastSaved|ApplicationVersion", "KString", "", "", "2022"
-			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "28/04/2023 20:15:15.486"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "29/04/2023 05:06:27.341"
 			P: "Original|ApplicationActiveProject", "KString", "", "", "G:\CozySpringJam\Assets"
 			P: "Original|ApplicationNativeFile", "KString", "", "", "G:\CozySpringJam\Scenes\Environment_Final.ma"
 		}
@@ -63,7 +63,7 @@ GlobalSettings:  {
 		P: "UnitScaleFactor", "double", "Number", "",1
 		P: "OriginalUnitScaleFactor", "double", "Number", "",1
 		P: "AmbientColor", "ColorRGB", "Color", "",0,0,0
-		P: "DefaultCamera", "KString", "", "", "Producer Front"
+		P: "DefaultCamera", "KString", "", "", "Producer Perspective"
 		P: "TimeMode", "enum", "", "",11
 		P: "TimeProtocol", "enum", "", "",2
 		P: "SnapOnFrameMode", "enum", "", "",0
@@ -80,7 +80,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 2534989661536, "", "Scene" {
+	Document: 2534826206224, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", "Take 001"
@@ -313,13 +313,13 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	NodeAttribute: 2534631537840, "NodeAttribute::", "Null" {
+	NodeAttribute: 2535147222576, "NodeAttribute::", "Null" {
 		Properties70:  {
 			P: "Look", "enum", "", "",0
 		}
 		TypeFlags: "Null"
 	}
-	Geometry: 2533683267840, "Geometry::", "Mesh" {
+	Geometry: 2533788431568, "Geometry::", "Mesh" {
 		Vertices: *828 {
 			a: -0.978759765625,90.1165924072266,0.98602294921875,-1.27392578125,89.6603240966797,1.53350830078125,-0.978759765625,89.2040557861328,2.08099365234375,-0.26605224609375,89.0150604248047,2.3077392578125,0.44659423828125,89.2040557861328,2.08099365234375,0.7418212890625,89.6603240966797,1.53350830078125,0.44659423828125,90.1165924072266,0.98602294921875,-0.26605224609375,90.3055572509766,0.75927734375,-1.78594970703125,98.2216033935547,6.68994140625,-2.41552734375,97.2485809326172,7.85748291015625,-1.78594970703125,96.2755279541016,9.0250244140625,-0.26605224609375,95.8725128173828,9.5086669921875,1.2537841796875,96.2755279541016,9.0250244140625,1.88330078125,97.2485809326172,7.85748291015625,1.2537841796875,98.2216033935547,6.68994140625,-0.26605224609375,98.6246490478516,6.206298828125,-0.26605224609375,97.7236785888672,8.25341796875,0.89361572265625,94.7453460693359,4.26165771484375,1.37396240234375,94.0028839111328,5.152587890625,0.89361572265625,93.2604217529297,6.04345703125,-0.26605224609375,92.9528961181641,6.4124755859375,-1.42578125,93.2604217529297,6.04345703125,-1.90618896484375,94.0028839111328,5.152587890625,-1.42578125,94.7453460693359,4.26165771484375,-0.26611328125,95.0528717041016,3.89263916015625,0.6402587890625,92.5030364990234,2.72283935546875,1.015625,91.9228057861328,3.4190673828125,0.6402587890625,91.3425750732422,4.11529541015625,-0.26605224609375,91.1022491455078,4.4036865234375,-1.17236328125,91.3425750732422,4.11529541015625,-1.54779052734375,91.9228057861328,3.4190673828125,-1.17236328125,92.5030364990234,2.72283935546875,-0.26605224609375,92.7433624267578,2.4344482421875,0.4945068359375,91.0966033935547,1.74041748046875,0.80950927734375,90.6096649169922,2.32470703125,0.4945068359375,90.1227264404297,2.90899658203125,-0.26605224609375,89.9210357666016,3.1510009765625,-1.02667236328125,90.1227264404297,2.90899658203125,-1.34173583984375,90.6096649169922,2.32470703125,-1.02667236328125,91.0966033935547,1.74041748046875,-0.26605224609375,91.2983245849609,1.4984130859375,-3.37310791015625,97.3727874755859,3.74658203125,
 -4.66009521484375,95.3836517333984,6.1334228515625,-3.37310791015625,93.3944854736328,8.520263671875,-0.26605224609375,92.5705413818359,9.5089111328125,2.8409423828125,93.3944854736328,8.520263671875,4.1279296875,95.3836517333984,6.1334228515625,2.8409423828125,97.3727874755859,3.74658203125,-0.26605224609375,98.1967315673828,2.7579345703125,-0.26611328125,95.9705352783203,6.62249755859375,2.10467529296875,95.4773101806641,3.1253662109375,3.086669921875,93.9595184326172,4.94659423828125,2.10467529296875,92.4417266845703,6.767822265625,-0.26611328125,91.8130645751953,7.52215576171875,-2.6368408203125,92.4417266845703,6.767822265625,-3.618896484375,93.9595184326172,4.94659423828125,-2.6368408203125,95.4773101806641,3.1253662109375,-0.26605224609375,96.1060028076172,2.3709716796875,-0.26611328125,93.9595184326172,4.94659423828125,-2.71990966796875,100.31282043457,7.047119140625,-3.73626708984375,98.7418975830078,8.93212890625,-2.71990966796875,97.1709747314453,10.817138671875,-0.26605224609375,96.5202484130859,11.597900390625,2.18768310546875,97.1709747314453,10.817138671875,3.2041015625,98.7418975830078,8.93212890625,2.18768310546875,100.31282043457,7.047119140625,-0.26605224609375,100.96354675293,6.266357421875,-0.26605224609375,99.5089263916016,9.5714111328125,1.60626220703125,98.0792694091797,5.942626953125,2.38177490234375,96.8805999755859,7.3809814453125,1.606201171875,95.6819305419922,8.81927490234375,-0.26605224609375,95.1854095458984,9.4150390625,-2.138427734375,95.6819305419922,8.81927490234375,-2.9139404296875,96.8805999755859,7.3809814453125,-2.13836669921875,98.0792694091797,5.942626953125,-0.26611328125,98.5757904052734,5.34686279296875,-0.26605224609375,96.8805999755859,7.3809814453125,-0.21417236328125,86.7819061279297,7.97161865234375,2.2421875,85.2935333251953,11.2056274414063,7.8299560546875,82.7213287353516,13.4606323242188,14.9400634765625,78.1959991455078,12.3998413085938,19.316650390625,74.7918243408203,8.87042236328125,-0.80010986328125,88.1416168212891,4.74505615234375,4.23211669921875,87.2946319580078,8.817626953125,
@@ -498,7 +498,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 2535484926224, "Model::SpecialFlowers", "Null" {
+	Model: 2535484935504, "Model::SpecialFlowers", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -509,7 +509,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 2535484898384, "Model::SM_Kokio", "Mesh" {
+	Model: 2535484942464, "Model::SM_Kokio", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -521,7 +521,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Material: 2534270559888, "Material::M_CozySpringJam", "" {
+	Material: 2535229495568, "Material::M_CozySpringJam_Plants", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -536,34 +536,34 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	Video: 2535330705408, "Video::file1", "Clip" {
+	Video: 2535330722208, "Video::file2", "Clip" {
 		Type: "Clip"
 		Properties70:  {
-			P: "Path", "KString", "XRefUrl", "", "G:\CozySpringJam\Textures\T_CozySpringJam_BaseColour.png"
+			P: "Path", "KString", "XRefUrl", "", "G:/CozySpringJam/Textures/T_CozySpringJam_BaseColour.png"
 			P: "RelPath", "KString", "XRefUrl", "", "..\Textures\T_CozySpringJam_BaseColour.png"
 		}
 		UseMipMap: 0
-		Filename: "G:\CozySpringJam\Textures\T_CozySpringJam_BaseColour.png"
+		Filename: "G:/CozySpringJam/Textures/T_CozySpringJam_BaseColour.png"
 		RelativeFilename: "..\Textures\T_CozySpringJam_BaseColour.png"
 	}
-	Texture: 2535330711648, "Texture::file1", "" {
+	Texture: 2535330708288, "Texture::file2", "" {
 		Type: "TextureVideoClip"
 		Version: 202
-		TextureName: "Texture::file1"
+		TextureName: "Texture::file2"
 		Properties70:  {
 			P: "CurrentTextureBlendMode", "enum", "", "",0
 			P: "UVSet", "KString", "", "", "map1"
 			P: "UseMaterial", "bool", "", "",1
 		}
-		Media: "Video::file1"
-		FileName: "G:\CozySpringJam\Textures\T_CozySpringJam_BaseColour.png"
+		Media: "Video::file2"
+		FileName: "G:/CozySpringJam/Textures/T_CozySpringJam_BaseColour.png"
 		RelativeFilename: "..\Textures\T_CozySpringJam_BaseColour.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	AnimationStack: 2534433465824, "AnimStack::Take 001", "" {
+	AnimationStack: 2534159383696, "AnimStack::Take 001", "" {
 		Properties70:  {
 			P: "LocalStart", "KTime", "Time", "",1924423250
 			P: "LocalStop", "KTime", "Time", "",230930790000
@@ -571,7 +571,7 @@ Objects:  {
 			P: "ReferenceStop", "KTime", "Time", "",230930790000
 		}
 	}
-	AnimationLayer: 2533390378320, "AnimLayer::BaseLayer", "" {
+	AnimationLayer: 2534222639872, "AnimLayer::BaseLayer", "" {
 	}
 }
 
@@ -581,28 +581,28 @@ Objects:  {
 Connections:  {
 	
 	;Model::SpecialFlowers, Model::RootNode
-	C: "OO",2535484926224,0
+	C: "OO",2535484935504,0
 	
 	;AnimLayer::BaseLayer, AnimStack::Take 001
-	C: "OO",2533390378320,2534433465824
+	C: "OO",2534222639872,2534159383696
 	
 	;NodeAttribute::, Model::SpecialFlowers
-	C: "OO",2534631537840,2535484926224
+	C: "OO",2535147222576,2535484935504
 	
 	;Model::SM_Kokio, Model::SpecialFlowers
-	C: "OO",2535484898384,2535484926224
+	C: "OO",2535484942464,2535484935504
 	
-	;Texture::file1, Material::M_CozySpringJam
-	C: "OP",2535330711648,2534270559888, "DiffuseColor"
+	;Texture::file2, Material::M_CozySpringJam_Plants
+	C: "OP",2535330708288,2535229495568, "DiffuseColor"
 	
-	;Video::file1, Texture::file1
-	C: "OO",2535330705408,2535330711648
+	;Video::file2, Texture::file2
+	C: "OO",2535330722208,2535330708288
 	
 	;Geometry::, Model::SM_Kokio
-	C: "OO",2533683267840,2535484898384
+	C: "OO",2533788431568,2535484942464
 	
-	;Material::M_CozySpringJam, Model::SM_Kokio
-	C: "OO",2534270559888,2535484898384
+	;Material::M_CozySpringJam_Plants, Model::SM_Kokio
+	C: "OO",2535229495568,2535484942464
 }
 ;Takes section
 ;----------------------------------------------------

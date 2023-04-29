@@ -9,10 +9,10 @@ FBXHeaderExtension:  {
 		Year: 2023
 		Month: 4
 		Day: 29
-		Hour: 6
-		Minute: 13
-		Second: 48
-		Millisecond: 302
+		Hour: 15
+		Minute: 6
+		Second: 21
+		Millisecond: 908
 	}
 	Creator: "FBX SDK/FBX Plugins version 2020.2.3"
 	OtherFlags:  {
@@ -37,13 +37,13 @@ FBXHeaderExtension:  {
 			P: "Original|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "Original|ApplicationName", "KString", "", "", "Maya"
 			P: "Original|ApplicationVersion", "KString", "", "", "2022"
-			P: "Original|DateTime_GMT", "DateTime", "", "", "28/04/2023 20:13:48.301"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "29/04/2023 05:06:21.907"
 			P: "Original|FileName", "KString", "", "", "G:\CozySpringJam\Assets\SM_GibraltarChampion.fbx"
 			P: "LastSaved", "Compound", "", ""
 			P: "LastSaved|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "LastSaved|ApplicationName", "KString", "", "", "Maya"
 			P: "LastSaved|ApplicationVersion", "KString", "", "", "2022"
-			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "28/04/2023 20:13:48.301"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "29/04/2023 05:06:21.907"
 			P: "Original|ApplicationActiveProject", "KString", "", "", "G:\CozySpringJam\Assets"
 			P: "Original|ApplicationNativeFile", "KString", "", "", "G:\CozySpringJam\Scenes\Environment_Final.ma"
 		}
@@ -63,7 +63,7 @@ GlobalSettings:  {
 		P: "UnitScaleFactor", "double", "Number", "",1
 		P: "OriginalUnitScaleFactor", "double", "Number", "",1
 		P: "AmbientColor", "ColorRGB", "Color", "",0,0,0
-		P: "DefaultCamera", "KString", "", "", "Producer Front"
+		P: "DefaultCamera", "KString", "", "", "Producer Perspective"
 		P: "TimeMode", "enum", "", "",11
 		P: "TimeProtocol", "enum", "", "",2
 		P: "SnapOnFrameMode", "enum", "", "",0
@@ -80,7 +80,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 2534826192656, "", "Scene" {
+	Document: 2533362548336, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", "Take 001"
@@ -313,13 +313,13 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	NodeAttribute: 2534272497168, "NodeAttribute::", "Null" {
+	NodeAttribute: 2535333145552, "NodeAttribute::", "Null" {
 		Properties70:  {
 			P: "Look", "enum", "", "",0
 		}
 		TypeFlags: "Null"
 	}
-	Geometry: 2535228291696, "Geometry::", "Mesh" {
+	Geometry: 2533683226176, "Geometry::", "Mesh" {
 		Vertices: *1095 {
 			a: -600.254455566406,257.084167480469,357.858825683594,-600.242004394531,263.732818603516,360.146759033203,-597.441345214844,279.552368164063,360.950164794922,-587.488525390625,299.28857421875,360.146759033203,-566.472778320313,317.720031738281,357.858825683594,-600.108703613281,254.868835449219,354.434722900391,-600.33251953125,260.184844970703,355.300506591797,-591.686279296875,292.8486328125,355.540283203125,-567.583129882813,317.091491699219,355.300506591797,-542.922729492188,325.408721923828,354.434722900391,-600.093322753906,254.685943603516,350.395690917969,-600.322814941406,259.152923583984,350.395690917969,-588.019653320313,298.559143066406,350.395690917969,-556.949401855469,322.037963867188,350.395690917969,-532.857299804688,325.901245117188,350.395690917969,-600.108703613281,254.868835449219,346.356658935547,-600.33251953125,260.184844970703,345.490875244141,-591.686279296875,292.8486328125,345.251098632813,-567.583129882813,317.091491699219,345.490875244141,-542.922729492188,325.408721923828,346.356658935547,-600.254455566406,257.084167480469,342.932556152344,-600.242004394531,263.732849121094,340.644622802734,-597.441345214844,279.552368164063,339.841217041016,-587.488525390625,299.28857421875,340.644622802734,-566.472778320313,317.720031738281,342.932556152344,-598.355163574219,249.867279052734,346.2470703125,-600.759399414063,249.867279052734,345.251159667969,-603.163818359375,249.867279052734,346.2470703125,-604.159729003906,249.867279052734,348.651397705078,-603.163818359375,249.867279052734,351.055725097656,-600.759399414063,249.867279052734,352.051605224609,-598.355163574219,249.867279052734,351.055725097656,-597.359252929688,249.867279052734,348.651397705078,-603.163818359375,394.304718017578,351.055725097656,-604.159729003906,394.304718017578,348.651397705078,-603.163818359375,394.304718017578,346.2470703125,-600.759399414063,394.304718017578,345.251159667969,-598.355163574219,394.304718017578,346.2470703125,-597.359252929688,394.304718017578,348.651397705078,-598.355163574219,394.304718017578,351.055725097656,
 -600.759399414063,394.304718017578,352.051605224609,-603.163818359375,302.362640380859,351.055725097656,-604.159729003906,302.362640380859,348.651397705078,-603.163818359375,302.362640380859,346.2470703125,-600.759399414063,302.362640380859,345.251159667969,-598.355163574219,302.362640380859,346.2470703125,-597.359252929688,302.362640380859,348.651397705078,-598.355163574219,302.362640380859,351.055725097656,-600.759399414063,302.362640380859,352.051605224609,-597.813293457031,257.010467529297,348.989410400391,-596.058044433594,262.498138427734,349.686157226563,-594.578491210938,275.555267333984,347.790344238281,-592.121032714844,291.84521484375,339.923614501953,-587.384826660156,307.058197021484,323.130249023438,-600.389343261719,255.181945800781,347.82080078125,-599.795715332031,259.569671630859,348.259368896484,-596.943054199219,286.52978515625,341.714874267578,-589.685913085938,306.539398193359,323.190399169922,-582.735961914063,313.404296875,304.046142578125,-603.476379394531,255.031005859375,346.562133789063,-603.547241210938,258.717956542969,346.737823486328,-599.749267578125,291.243133544922,337.320007324219,-590.157775878906,310.622131347656,313.536376953125,-582.720520019531,313.810821533203,295.094360351563,-606.572937011719,255.181945800781,345.327087402344,-607.304809570313,259.569671630859,345.231140136719,-604.819213867188,286.52978515625,338.53857421875,-597.194946289063,306.539398193359,320.162139892578,-588.919494628906,313.404296875,301.552429199219,-609.239013671875,257.010467529297,344.381622314453,-610.986511230469,262.498138427734,343.665802001953,-610.736999511719,275.555267333984,341.273956298828,-607.049499511719,291.84521484375,333.903259277344,-598.810546875,307.058197021484,318.5224609375,-604.270812988281,398.472778320313,347.086181640625,-607.493713378906,401.589996337891,342.370422363281,-615.414489746094,406.070648193359,338.502655029297,-623.036376953125,407.345550537109,339.283233642578,-625.228759765625,407.036499023438,340.045349121094,-603.6494140625,397.271636962891,349.004211425781,
@@ -520,7 +520,7 @@ Objects:  {
 			}
 		}
 	}
-	Model: 2535484923904, "Model::SpecialFlowers", "Null" {
+	Model: 2535484935504, "Model::SpecialFlowers", "Null" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -531,7 +531,7 @@ Objects:  {
 		Shading: Y
 		Culling: "CullingOff"
 	}
-	Model: 2535484926224, "Model::SM_GibraltarChampion", "Mesh" {
+	Model: 2535484944784, "Model::SM_GibraltarChampion", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationPivot", "Vector3D", "Vector", "",-602.19947268151,249.867279052734,346.667399004906
@@ -547,7 +547,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Material: 2534863629840, "Material::M_CozySpringJam", "" {
+	Material: 2534436747184, "Material::M_CozySpringJam_Plants", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -562,34 +562,34 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	Video: 2535330715968, "Video::file1", "Clip" {
+	Video: 2535330696768, "Video::file2", "Clip" {
 		Type: "Clip"
 		Properties70:  {
-			P: "Path", "KString", "XRefUrl", "", "G:\CozySpringJam\Textures\T_CozySpringJam_BaseColour.png"
+			P: "Path", "KString", "XRefUrl", "", "G:/CozySpringJam/Textures/T_CozySpringJam_BaseColour.png"
 			P: "RelPath", "KString", "XRefUrl", "", "..\Textures\T_CozySpringJam_BaseColour.png"
 		}
 		UseMipMap: 0
-		Filename: "G:\CozySpringJam\Textures\T_CozySpringJam_BaseColour.png"
+		Filename: "G:/CozySpringJam/Textures/T_CozySpringJam_BaseColour.png"
 		RelativeFilename: "..\Textures\T_CozySpringJam_BaseColour.png"
 	}
-	Texture: 2535330703968, "Texture::file1", "" {
+	Texture: 2535330722208, "Texture::file2", "" {
 		Type: "TextureVideoClip"
 		Version: 202
-		TextureName: "Texture::file1"
+		TextureName: "Texture::file2"
 		Properties70:  {
 			P: "CurrentTextureBlendMode", "enum", "", "",0
 			P: "UVSet", "KString", "", "", "map1"
 			P: "UseMaterial", "bool", "", "",1
 		}
-		Media: "Video::file1"
-		FileName: "G:\CozySpringJam\Textures\T_CozySpringJam_BaseColour.png"
+		Media: "Video::file2"
+		FileName: "G:/CozySpringJam/Textures/T_CozySpringJam_BaseColour.png"
 		RelativeFilename: "..\Textures\T_CozySpringJam_BaseColour.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	AnimationStack: 2534838140576, "AnimStack::Take 001", "" {
+	AnimationStack: 2535147661600, "AnimStack::Take 001", "" {
 		Properties70:  {
 			P: "LocalStart", "KTime", "Time", "",1924423250
 			P: "LocalStop", "KTime", "Time", "",230930790000
@@ -597,7 +597,7 @@ Objects:  {
 			P: "ReferenceStop", "KTime", "Time", "",230930790000
 		}
 	}
-	AnimationLayer: 2534268969632, "AnimLayer::BaseLayer", "" {
+	AnimationLayer: 2534269379856, "AnimLayer::BaseLayer", "" {
 	}
 }
 
@@ -607,28 +607,28 @@ Objects:  {
 Connections:  {
 	
 	;Model::SpecialFlowers, Model::RootNode
-	C: "OO",2535484923904,0
+	C: "OO",2535484935504,0
 	
 	;AnimLayer::BaseLayer, AnimStack::Take 001
-	C: "OO",2534268969632,2534838140576
+	C: "OO",2534269379856,2535147661600
 	
 	;NodeAttribute::, Model::SpecialFlowers
-	C: "OO",2534272497168,2535484923904
+	C: "OO",2535333145552,2535484935504
 	
 	;Model::SM_GibraltarChampion, Model::SpecialFlowers
-	C: "OO",2535484926224,2535484923904
+	C: "OO",2535484944784,2535484935504
 	
-	;Texture::file1, Material::M_CozySpringJam
-	C: "OP",2535330703968,2534863629840, "DiffuseColor"
+	;Texture::file2, Material::M_CozySpringJam_Plants
+	C: "OP",2535330722208,2534436747184, "DiffuseColor"
 	
-	;Video::file1, Texture::file1
-	C: "OO",2535330715968,2535330703968
+	;Video::file2, Texture::file2
+	C: "OO",2535330696768,2535330722208
 	
 	;Geometry::, Model::SM_GibraltarChampion
-	C: "OO",2535228291696,2535484926224
+	C: "OO",2533683226176,2535484944784
 	
-	;Material::M_CozySpringJam, Model::SM_GibraltarChampion
-	C: "OO",2534863629840,2535484926224
+	;Material::M_CozySpringJam_Plants, Model::SM_GibraltarChampion
+	C: "OO",2534436747184,2535484944784
 }
 ;Takes section
 ;----------------------------------------------------

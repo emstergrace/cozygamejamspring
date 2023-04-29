@@ -9,10 +9,10 @@ FBXHeaderExtension:  {
 		Year: 2023
 		Month: 4
 		Day: 29
-		Hour: 5
-		Minute: 56
-		Second: 0
-		Millisecond: 338
+		Hour: 15
+		Minute: 6
+		Second: 43
+		Millisecond: 929
 	}
 	Creator: "FBX SDK/FBX Plugins version 2020.2.3"
 	OtherFlags:  {
@@ -37,15 +37,15 @@ FBXHeaderExtension:  {
 			P: "Original|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "Original|ApplicationName", "KString", "", "", "Maya"
 			P: "Original|ApplicationVersion", "KString", "", "", "2022"
-			P: "Original|DateTime_GMT", "DateTime", "", "", "28/04/2023 19:56:00.337"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "29/04/2023 05:06:43.927"
 			P: "Original|FileName", "KString", "", "", "G:\CozySpringJam\Assets\SM_Lotus.fbx"
 			P: "LastSaved", "Compound", "", ""
 			P: "LastSaved|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "LastSaved|ApplicationName", "KString", "", "", "Maya"
 			P: "LastSaved|ApplicationVersion", "KString", "", "", "2022"
-			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "28/04/2023 19:56:00.337"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "29/04/2023 05:06:43.927"
 			P: "Original|ApplicationActiveProject", "KString", "", "", "G:\CozySpringJam\Assets"
-			P: "Original|ApplicationNativeFile", "KString", "", "", "G:\CozySpringJam\Scenes\Environment.ma"
+			P: "Original|ApplicationNativeFile", "KString", "", "", "G:\CozySpringJam\Scenes\Environment_Final.ma"
 		}
 	}
 }
@@ -80,7 +80,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 2534989663328, "", "Scene" {
+	Document: 2534826198032, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", "Take 001"
@@ -100,7 +100,7 @@ References:  {
 
 Definitions:  {
 	Version: 100
-	Count: 8
+	Count: 10
 	ObjectType: "GlobalSettings" {
 		Count: 1
 	}
@@ -132,68 +132,18 @@ Definitions:  {
 			}
 		}
 	}
-	ObjectType: "Geometry" {
+	ObjectType: "NodeAttribute" {
 		Count: 1
-		PropertyTemplate: "FbxMesh" {
+		PropertyTemplate: "FbxNull" {
 			Properties70:  {
 				P: "Color", "ColorRGB", "Color", "",0.8,0.8,0.8
-				P: "BBoxMin", "Vector3D", "Vector", "",0,0,0
-				P: "BBoxMax", "Vector3D", "Vector", "",0,0,0
-				P: "Primary Visibility", "bool", "", "",1
-				P: "Casts Shadows", "bool", "", "",1
-				P: "Receive Shadows", "bool", "", "",1
-			}
-		}
-	}
-	ObjectType: "Material" {
-		Count: 1
-		PropertyTemplate: "FbxSurfaceLambert" {
-			Properties70:  {
-				P: "ShadingModel", "KString", "", "", "Lambert"
-				P: "MultiLayer", "bool", "", "",0
-				P: "EmissiveColor", "Color", "", "A",0,0,0
-				P: "EmissiveFactor", "Number", "", "A",1
-				P: "AmbientColor", "Color", "", "A",0.2,0.2,0.2
-				P: "AmbientFactor", "Number", "", "A",1
-				P: "DiffuseColor", "Color", "", "A",0.8,0.8,0.8
-				P: "DiffuseFactor", "Number", "", "A",1
-				P: "Bump", "Vector3D", "Vector", "",0,0,0
-				P: "NormalMap", "Vector3D", "Vector", "",0,0,0
-				P: "BumpFactor", "double", "Number", "",1
-				P: "TransparentColor", "Color", "", "A",0,0,0
-				P: "TransparencyFactor", "Number", "", "A",0
-				P: "DisplacementColor", "ColorRGB", "Color", "",0,0,0
-				P: "DisplacementFactor", "double", "Number", "",1
-				P: "VectorDisplacementColor", "ColorRGB", "Color", "",0,0,0
-				P: "VectorDisplacementFactor", "double", "Number", "",1
-			}
-		}
-	}
-	ObjectType: "Texture" {
-		Count: 1
-		PropertyTemplate: "FbxFileTexture" {
-			Properties70:  {
-				P: "TextureTypeUse", "enum", "", "",0
-				P: "Texture alpha", "Number", "", "A",1
-				P: "CurrentMappingType", "enum", "", "",0
-				P: "WrapModeU", "enum", "", "",0
-				P: "WrapModeV", "enum", "", "",0
-				P: "UVSwap", "bool", "", "",0
-				P: "PremultiplyAlpha", "bool", "", "",1
-				P: "Translation", "Vector", "", "A",0,0,0
-				P: "Rotation", "Vector", "", "A",0,0,0
-				P: "Scaling", "Vector", "", "A",1,1,1
-				P: "TextureRotationPivot", "Vector3D", "Vector", "",0,0,0
-				P: "TextureScalingPivot", "Vector3D", "Vector", "",0,0,0
-				P: "CurrentTextureBlendMode", "enum", "", "",1
-				P: "UVSet", "KString", "", "", "default"
-				P: "UseMaterial", "bool", "", "",0
-				P: "UseMipMap", "bool", "", "",0
+				P: "Size", "double", "Number", "",100
+				P: "Look", "enum", "", "",1
 			}
 		}
 	}
 	ObjectType: "Model" {
-		Count: 1
+		Count: 2
 		PropertyTemplate: "FbxNode" {
 			Properties70:  {
 				P: "QuaternionInterpolate", "enum", "", "",0
@@ -270,6 +220,66 @@ Definitions:  {
 			}
 		}
 	}
+	ObjectType: "Geometry" {
+		Count: 1
+		PropertyTemplate: "FbxMesh" {
+			Properties70:  {
+				P: "Color", "ColorRGB", "Color", "",0.8,0.8,0.8
+				P: "BBoxMin", "Vector3D", "Vector", "",0,0,0
+				P: "BBoxMax", "Vector3D", "Vector", "",0,0,0
+				P: "Primary Visibility", "bool", "", "",1
+				P: "Casts Shadows", "bool", "", "",1
+				P: "Receive Shadows", "bool", "", "",1
+			}
+		}
+	}
+	ObjectType: "Material" {
+		Count: 1
+		PropertyTemplate: "FbxSurfaceLambert" {
+			Properties70:  {
+				P: "ShadingModel", "KString", "", "", "Lambert"
+				P: "MultiLayer", "bool", "", "",0
+				P: "EmissiveColor", "Color", "", "A",0,0,0
+				P: "EmissiveFactor", "Number", "", "A",1
+				P: "AmbientColor", "Color", "", "A",0.2,0.2,0.2
+				P: "AmbientFactor", "Number", "", "A",1
+				P: "DiffuseColor", "Color", "", "A",0.8,0.8,0.8
+				P: "DiffuseFactor", "Number", "", "A",1
+				P: "Bump", "Vector3D", "Vector", "",0,0,0
+				P: "NormalMap", "Vector3D", "Vector", "",0,0,0
+				P: "BumpFactor", "double", "Number", "",1
+				P: "TransparentColor", "Color", "", "A",0,0,0
+				P: "TransparencyFactor", "Number", "", "A",0
+				P: "DisplacementColor", "ColorRGB", "Color", "",0,0,0
+				P: "DisplacementFactor", "double", "Number", "",1
+				P: "VectorDisplacementColor", "ColorRGB", "Color", "",0,0,0
+				P: "VectorDisplacementFactor", "double", "Number", "",1
+			}
+		}
+	}
+	ObjectType: "Texture" {
+		Count: 1
+		PropertyTemplate: "FbxFileTexture" {
+			Properties70:  {
+				P: "TextureTypeUse", "enum", "", "",0
+				P: "Texture alpha", "Number", "", "A",1
+				P: "CurrentMappingType", "enum", "", "",0
+				P: "WrapModeU", "enum", "", "",0
+				P: "WrapModeV", "enum", "", "",0
+				P: "UVSwap", "bool", "", "",0
+				P: "PremultiplyAlpha", "bool", "", "",1
+				P: "Translation", "Vector", "", "A",0,0,0
+				P: "Rotation", "Vector", "", "A",0,0,0
+				P: "Scaling", "Vector", "", "A",1,1,1
+				P: "TextureRotationPivot", "Vector3D", "Vector", "",0,0,0
+				P: "TextureScalingPivot", "Vector3D", "Vector", "",0,0,0
+				P: "CurrentTextureBlendMode", "enum", "", "",1
+				P: "UVSet", "KString", "", "", "default"
+				P: "UseMaterial", "bool", "", "",0
+				P: "UseMipMap", "bool", "", "",0
+			}
+		}
+	}
 	ObjectType: "Video" {
 		Count: 1
 		PropertyTemplate: "FbxVideo" {
@@ -303,7 +313,13 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Geometry: 2533683294720, "Geometry::", "Mesh" {
+	NodeAttribute: 2535147304944, "NodeAttribute::", "Null" {
+		Properties70:  {
+			P: "Look", "enum", "", "",0
+		}
+		TypeFlags: "Null"
+	}
+	Geometry: 2534380935968, "Geometry::", "Mesh" {
 		Vertices: *852 {
 			a: 1.7232666015625,19.09010887146,1.1612548828125,12.1700744628906,0,11.6080322265625,1.7232666015625,0,15.9351806640625,-8.7235107421875,0,11.6080322265625,-13.0506286621094,0,1.1612548828125,-8.7235107421875,0,-9.2855224609375,1.7232666015625,0,-13.6126708984375,12.1700744628906,0,-9.2855224609375,16.4972534179688,0,1.1612548828125,1.7232666015625,0,1.1612548828125,9.20315551757813,16.0464324951172,-6.318603515625,13.0012817382813,11.8674011230469,-10.11669921875,13.4680480957031,5.40839767456055,-10.5833740234375,1.7232666015625,16.0464324951172,-9.416748046875,1.7232666015625,11.8674011230469,-14.7882080078125,1.7232666015625,5.40839767456055,-15.4482421875,-5.75656127929688,16.0464324951172,-6.318603515625,-9.55462646484375,11.8674011230469,-10.11669921875,-10.0213623046875,5.40839767456055,-10.58349609375,-8.85479736328125,16.0464401245117,1.1612548828125,-14.2261352539063,11.8673973083496,1.1612548828125,-14.88623046875,5.40839385986328,1.1612548828125,-5.75656127929688,16.0464324951172,8.64111328125,-9.55462646484375,11.8674011230469,12.439208984375,-10.0213623046875,5.40839767456055,12.906005859375,1.7232666015625,16.0464401245117,11.7393798828125,1.7232666015625,11.8673973083496,17.1107177734375,1.7232666015625,5.40839385986328,17.770751953125,9.20315551757813,16.0464324951172,8.64111328125,13.0012817382813,11.8674011230469,12.439208984375,13.4680480957031,5.40839767456055,12.906005859375,12.3013916015625,16.0464324951172,1.1612548828125,17.6727905273438,11.8674011230469,1.1612548828125,18.3328857421875,5.40839767456055,1.1612548828125,14.9363098144531,3.27959060668945,1.8990478515625,21.6633605957031,1.46516990661621,6.7064208984375,28.2764282226563,2.50693130493164,17.6422119140625,32.3516235351563,10.6396636962891,31.557373046875,31.3106689453125,20.1797771453857,40.122802734375,8.38174438476563,5.27800846099854,0.7523193359375,15.5658569335938,1.44868087768555,10.600830078125,25.6907043457031,6.73199844360352,29.9677734375,29.2388916015625,18.7755508422852,40.568603515625,28.8851623535156,23.7268085479736,43.2645263671875,
 2.58721923828125,6.12992095947266,2.5716552734375,10.0399780273438,1.38016128540039,14.7757568359375,22.6887817382813,9.10350322723389,35.4884033203125,27.2780456542969,20.9678001403809,43.00341796875,27.9001159667969,24.1347274780273,44.0220947265625,-1.6778564453125,5.27800846099854,6.8955078125,3.80209350585938,1.44868087768555,17.78466796875,16.406494140625,6.73199844360352,35.637451171875,24.2164001464844,18.7755508422852,43.6357421875,26.7762756347656,23.7268085479736,44.5523681640625,-3.6514892578125,3.27959060668945,13.250244140625,-2.44732666015625,1.46516990661621,21.4302978515625,4.26071166992188,2.50693130493164,32.30810546875,14.7782592773438,10.6396636962891,42.2890625,22.8735656738281,20.1797771453857,45.275146484375,8.14004516601563,3.27959060668945,13.11572265625,7.12274169921875,1.46516990661621,21.3211669921875,0.66455078125,2.50693130493164,32.34912109375,-9.6226806640625,10.6396636962891,42.5672607421875,-17.6477661132813,20.1797771453857,45.7373046875,6.02203369140625,5.27800846099854,6.8077392578125,0.791839599609375,1.44868087768555,17.819091796875,-11.4021911621094,6.73199844360352,35.95458984375,-19.0276489257813,18.7755508422852,44.12890625,-21.5659484863281,23.7268085479736,45.103759765625,1.659423828125,6.12992095947266,2.582275390625,-5.51309204101563,1.38016128540039,14.953125,-17.6862182617188,9.10350322723389,35.9488525390625,-22.1029052734375,20.9678001403809,43.566650390625,-22.7015380859375,24.1347274780273,44.59912109375,-4.17507934570313,5.27800846099854,0.8955078125,-11.1327209472656,1.44868087768555,10.9052734375,-20.8132934570313,6.73199844360352,30.4981689453125,-24.1187744140625,18.7755508422852,41.1771240234375,-23.7036437988281,23.7268085479736,43.8642578125,-10.7017822265625,3.27959060668945,2.19140625,-17.3174438476563,1.46516990661621,7.1510009765625,-23.679443359375,2.50693130493164,18.2347412109375,-27.4361877441406,10.6396636962891,32.2391357421875,-26.2001953125,20.1797771453857,40.7786865234375,-4.65478515625,3.27959060668945,12.687255859375,-12.2636413574219,1.46516990661621,15.9229736328125,
@@ -467,7 +483,18 @@ Objects:  {
 			}
 		}
 	}
-	Model: 2535329971216, "Model::SM_Lotus", "Mesh" {
+	Model: 2535484933184, "Model::SpecialFlowers", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "RotationActive", "bool", "", "",1
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+		}
+		Shading: Y
+		Culling: "CullingOff"
+	}
+	Model: 2535484951744, "Model::SM_Lotus", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "RotationActive", "bool", "", "",1
@@ -479,7 +506,7 @@ Objects:  {
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Material: 2534746809680, "Material::M_CozySpringJam", "" {
+	Material: 2535229505568, "Material::M_CozySpringJam_Plants", "" {
 		Version: 102
 		ShadingModel: "lambert"
 		MultiLayer: 0
@@ -494,34 +521,34 @@ Objects:  {
 			P: "Opacity", "double", "Number", "",1
 		}
 	}
-	Video: 2534837467488, "Video::file1", "Clip" {
+	Video: 2535330704928, "Video::file2", "Clip" {
 		Type: "Clip"
 		Properties70:  {
-			P: "Path", "KString", "XRefUrl", "", "G:\CozySpringJam\Textures\T_CozySpringJam_BaseColour.png"
+			P: "Path", "KString", "XRefUrl", "", "G:/CozySpringJam/Textures/T_CozySpringJam_BaseColour.png"
 			P: "RelPath", "KString", "XRefUrl", "", "..\Textures\T_CozySpringJam_BaseColour.png"
 		}
 		UseMipMap: 0
-		Filename: "G:\CozySpringJam\Textures\T_CozySpringJam_BaseColour.png"
+		Filename: "G:/CozySpringJam/Textures/T_CozySpringJam_BaseColour.png"
 		RelativeFilename: "..\Textures\T_CozySpringJam_BaseColour.png"
 	}
-	Texture: 2534837464608, "Texture::file1", "" {
+	Texture: 2535330716928, "Texture::file2", "" {
 		Type: "TextureVideoClip"
 		Version: 202
-		TextureName: "Texture::file1"
+		TextureName: "Texture::file2"
 		Properties70:  {
 			P: "CurrentTextureBlendMode", "enum", "", "",0
 			P: "UVSet", "KString", "", "", "map1"
 			P: "UseMaterial", "bool", "", "",1
 		}
-		Media: "Video::file1"
-		FileName: "G:\CozySpringJam\Textures\T_CozySpringJam_BaseColour.png"
+		Media: "Video::file2"
+		FileName: "G:/CozySpringJam/Textures/T_CozySpringJam_BaseColour.png"
 		RelativeFilename: "..\Textures\T_CozySpringJam_BaseColour.png"
 		ModelUVTranslation: 0,0
 		ModelUVScaling: 1,1
 		Texture_Alpha_Source: "None"
 		Cropping: 0,0,0,0
 	}
-	AnimationStack: 2534431690080, "AnimStack::Take 001", "" {
+	AnimationStack: 2534159381408, "AnimStack::Take 001", "" {
 		Properties70:  {
 			P: "LocalStart", "KTime", "Time", "",1924423250
 			P: "LocalStop", "KTime", "Time", "",230930790000
@@ -529,7 +556,7 @@ Objects:  {
 			P: "ReferenceStop", "KTime", "Time", "",230930790000
 		}
 	}
-	AnimationLayer: 2535155992704, "AnimLayer::BaseLayer", "" {
+	AnimationLayer: 2533689606336, "AnimLayer::BaseLayer", "" {
 	}
 }
 
@@ -538,23 +565,29 @@ Objects:  {
 
 Connections:  {
 	
-	;Model::SM_Lotus, Model::RootNode
-	C: "OO",2535329971216,0
+	;Model::SpecialFlowers, Model::RootNode
+	C: "OO",2535484933184,0
 	
 	;AnimLayer::BaseLayer, AnimStack::Take 001
-	C: "OO",2535155992704,2534431690080
+	C: "OO",2533689606336,2534159381408
 	
-	;Texture::file1, Material::M_CozySpringJam
-	C: "OP",2534837464608,2534746809680, "DiffuseColor"
+	;NodeAttribute::, Model::SpecialFlowers
+	C: "OO",2535147304944,2535484933184
 	
-	;Video::file1, Texture::file1
-	C: "OO",2534837467488,2534837464608
+	;Model::SM_Lotus, Model::SpecialFlowers
+	C: "OO",2535484951744,2535484933184
+	
+	;Texture::file2, Material::M_CozySpringJam_Plants
+	C: "OP",2535330716928,2535229505568, "DiffuseColor"
+	
+	;Video::file2, Texture::file2
+	C: "OO",2535330704928,2535330716928
 	
 	;Geometry::, Model::SM_Lotus
-	C: "OO",2533683294720,2535329971216
+	C: "OO",2534380935968,2535484951744
 	
-	;Material::M_CozySpringJam, Model::SM_Lotus
-	C: "OO",2534746809680,2535329971216
+	;Material::M_CozySpringJam_Plants, Model::SM_Lotus
+	C: "OO",2535229505568,2535484951744
 }
 ;Takes section
 ;----------------------------------------------------

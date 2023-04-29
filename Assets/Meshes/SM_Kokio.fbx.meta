@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: M_CozySpringJam
     second: {fileID: 2100000, guid: 6bedab9831e6a6748b063d3b82221855, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_CozySpringJam_Plants
+    second: {fileID: 2100000, guid: 7cbf2bdcef3831d4cab9230e254c5d03, type: 2}
   materials:
     materialImportMode: 2
     materialName: 1

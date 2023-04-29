@@ -356,11 +356,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.2680602, y: 2.1674995, z: 4.908687}
   m_Center: {x: 0.056369662, y: 1.0837498, z: 0.005204916}
---- !u!23 &29914133 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 5024888011143433900, guid: 7f4712ab785efc04ba4824f7bbb99962, type: 3}
-  m_PrefabInstance: {fileID: 956254259}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &40247024
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,7 +510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flowerName: Kokio
   materialSource: {fileID: 2100000, guid: 6bedab9831e6a6748b063d3b82221855, type: 2}
-  meshRenderer: {fileID: 1638647320}
+  meshRenderer: {fileID: 0}
 --- !u!54 &88737194
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -545,11 +540,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5361487, y: 1.1131344, z: 0.4576258}
   m_Center: {x: -0.0553291, y: 0.4681251, z: -0.01839584}
---- !u!23 &92287701 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 8269013882307276924, guid: 7f4712ab785efc04ba4824f7bbb99962, type: 3}
-  m_PrefabInstance: {fileID: 956254259}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &101597229
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,11 +758,6 @@ RectTransform:
   m_AnchoredPosition: {x: -10.2, y: -33.7}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!23 &116120488 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 1932934215805940514, guid: 7f4712ab785efc04ba4824f7bbb99962, type: 3}
-  m_PrefabInstance: {fileID: 956254259}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &120251156
 GameObject:
   m_ObjectHideFlags: 0
@@ -3987,7 +3972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flowerName: Fire_Lily
   materialSource: {fileID: 2100000, guid: 6bedab9831e6a6748b063d3b82221855, type: 2}
-  meshRenderer: {fileID: 92287701}
+  meshRenderer: {fileID: 0}
 --- !u!65 &595886986
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6150,7 +6135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flowerName: Black_Bat
   materialSource: {fileID: 2100000, guid: 6bedab9831e6a6748b063d3b82221855, type: 2}
-  meshRenderer: {fileID: 116120488}
+  meshRenderer: {fileID: 0}
 --- !u!54 &865655404
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7009,7 +6994,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: dry savannahs and thickets. It is many
+  m_text: dry savannahs and thickets. It has many
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -8281,7 +8266,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: the Night, this flower only bloom at
+  m_text: the Night, this flower only blooms at
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -10312,11 +10297,6 @@ RectTransform:
   m_AnchoredPosition: {x: -1.4000015, y: -22.400002}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!23 &1638647320 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 5977636615939666251, guid: 7f4712ab785efc04ba4824f7bbb99962, type: 3}
-  m_PrefabInstance: {fileID: 956254259}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1657792103
 GameObject:
   m_ObjectHideFlags: 0
@@ -10561,7 +10541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flowerName: Gibraltar_Champion
   materialSource: {fileID: 2100000, guid: 6bedab9831e6a6748b063d3b82221855, type: 2}
-  meshRenderer: {fileID: 29914133}
+  meshRenderer: {fileID: 0}
 --- !u!54 &1684897885
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13371,7 +13351,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: night. This flower is know to grow across
+  m_text: night. It is known to grow across
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}

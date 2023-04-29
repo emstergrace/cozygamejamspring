@@ -11,18 +11,40 @@ public class Journal : MonoBehaviour
     {
         PlayerInputActions inputActions = new PlayerInputActions();
         inputActions.Journal.Enable();
-        inputActions.Journal.OpenJournal.performed += OpenJounal;
-        inputActions.Journal.CloseJournal.performed += CloseJounal;
+        inputActions.Journal.OpenJournal.performed += OnToggleJournal;
+        inputActions.Journal.CloseJournal.performed += OnCloseJournal;
     }
 
-
-    public void OpenJounal(InputAction.CallbackContext obj)
+    public void ToggleJournal()
     {
-        journal_Panel.SetActive(!journal_Panel.activeSelf);
+        if (journal_Panel.activeSelf)
+        {
+            CloseJournal();
+        }
+        else
+        {
+            OpenJournal();
+        }
     }
 
-    public void CloseJounal(InputAction.CallbackContext obj)
+    public void CloseJournal()
     {
         journal_Panel.SetActive(false);
+    }
+
+
+    public void OpenJournal()
+    {
+        journal_Panel.SetActive(true);
+    }
+
+    private void OnToggleJournal(InputAction.CallbackContext obj)
+    {
+        ToggleJournal();
+    }
+
+    private void OnCloseJournal(InputAction.CallbackContext obj)
+    {
+        CloseJournal();
     }
 }

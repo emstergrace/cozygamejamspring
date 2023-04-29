@@ -1,10 +1,12 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class FlowerPicker : MonoBehaviour
 {
 
-    private Pickable flowerInReach;
+    private List<Pickable> flowersInReach;
 
     private PlayerInputActions inputActions;
     private FlowerManager flowerManager;
@@ -12,6 +14,8 @@ public class FlowerPicker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        flowersInReach = new List<Pickable>();
+
         inputActions = new PlayerInputActions();
         inputActions.Player.Enable();
         inputActions.Player.Interact.performed += PickFlower;
@@ -21,11 +25,12 @@ public class FlowerPicker : MonoBehaviour
 
     private void PickFlower(InputAction.CallbackContext obj)
     {
-        if (flowerInReach == null) return;
+        if (!flowersInReach.Any()) return;
 
         flowerManager.FoundFlower();
-        flowerInReach.Found();
-        flowerInReach = null;
+        flowersInReach.First().Found();
+        flowersInReach.First().Highlight(false);
+        flowersInReach.RemoveAt(0);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -33,7 +38,8 @@ public class FlowerPicker : MonoBehaviour
         Pickable pickable = other.GetComponent<Pickable>();
         if (pickable == null || pickable.HasBeenFound()) return;
 
-        flowerInReach = pickable;
+        flowersInReach.Add(pickable);
+        pickable.Highlight(true);
     }
 
     private void OnTriggerExit(Collider other)
@@ -41,6 +47,7 @@ public class FlowerPicker : MonoBehaviour
         Pickable pickable = other.GetComponent<Pickable>();
         if (pickable == null) return;
 
-        flowerInReach = null;
+        pickable.Highlight(false);
+        flowersInReach.Remove(pickable);
     }
 }

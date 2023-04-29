@@ -3,14 +3,13 @@ using UnityEngine;
 public class Pickable : MonoBehaviour
 {
 
-    private bool found = false;
-
     [SerializeField]
     private Material materialSource;
     [SerializeField]
     private MeshRenderer meshRenderer;
 
     private bool isHighlighted;
+    private bool found = false;
 
     private void Awake()
     {
@@ -18,10 +17,6 @@ public class Pickable : MonoBehaviour
         {
             meshRenderer.material = Instantiate(materialSource);
         }
-    }
-    private void Start()
-    {
-        
     }
 
     public void Found()

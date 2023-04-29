@@ -3,13 +3,15 @@ using UnityEngine;
 public class Pickable : MonoBehaviour
 {
 
+    [SerializeField] 
+    private string flowerName;
+
     [SerializeField]
     private Material materialSource;
     [SerializeField]
     private MeshRenderer meshRenderer;
 
     private bool isHighlighted;
-    private bool found = false;
 
     private void Awake()
     {
@@ -19,14 +21,13 @@ public class Pickable : MonoBehaviour
         }
     }
 
-    public void Found()
+    public void Pick()
     {
-        found = true;
+        Destroy(this.gameObject);
     }
 
-    public bool HasBeenFound()
-    {
-        return found;
+    public string GetName() { 
+        return flowerName; 
     }
 
     public void Highlight(bool bl)

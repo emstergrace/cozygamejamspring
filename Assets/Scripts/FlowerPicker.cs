@@ -27,16 +27,20 @@ public class FlowerPicker : MonoBehaviour
     {
         if (!flowersInReach.Any()) return;
 
-        flowerManager.FoundFlower();
-        flowersInReach.First().Found();
-        flowersInReach.First().Highlight(false);
+        Pickable flower = flowersInReach.First();
+
+        string flowerName = flower.GetName();
+        flowerManager.FoundFlower(flowerName);
+
+        flower.Pick();
+
         flowersInReach.RemoveAt(0);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         Pickable pickable = other.GetComponent<Pickable>();
-        if (pickable == null || pickable.HasBeenFound()) return;
+        if (pickable == null) return;
 
         flowersInReach.Add(pickable);
         pickable.Highlight(true);

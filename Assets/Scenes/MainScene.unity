@@ -606,6 +606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43286bb586daa0c42be950c8bbbdfcd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flowerName: Kokio
   materialSource: {fileID: 2100000, guid: 6bedab9831e6a6748b063d3b82221855, type: 2}
   meshRenderer: {fileID: 1638647320}
 --- !u!54 &88737194
@@ -2514,6 +2515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43286bb586daa0c42be950c8bbbdfcd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flowerName: Kadupul
   materialSource: {fileID: 2100000, guid: 6bedab9831e6a6748b063d3b82221855, type: 2}
   meshRenderer: {fileID: 212047065}
 --- !u!54 &496871741
@@ -2933,6 +2935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43286bb586daa0c42be950c8bbbdfcd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flowerName: Fire_Lily
   materialSource: {fileID: 2100000, guid: 6bedab9831e6a6748b063d3b82221855, type: 2}
   meshRenderer: {fileID: 92287701}
 --- !u!65 &595886986
@@ -3135,6 +3138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43286bb586daa0c42be950c8bbbdfcd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flowerName: Jade_Vine
   materialSource: {fileID: 2100000, guid: 6bedab9831e6a6748b063d3b82221855, type: 2}
   meshRenderer: {fileID: 781298103}
 --- !u!54 &653995821
@@ -3782,6 +3786,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxAmountFlowers: 6
   flowerAmountDisplay: {fileID: 1534177658}
+  centralTable: {fileID: 806610056}
 --- !u!1 &721456571
 GameObject:
   m_ObjectHideFlags: 0
@@ -4343,6 +4348,11 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 1745104562844761162, guid: 7f4712ab785efc04ba4824f7bbb99962, type: 3}
   m_PrefabInstance: {fileID: 956254259}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &789315824 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4497897494432374482, guid: 7f4712ab785efc04ba4824f7bbb99962, type: 3}
+  m_PrefabInstance: {fileID: 956254259}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &796939970
 GameObject:
   m_ObjectHideFlags: 0
@@ -4478,6 +4488,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796939970}
   m_CullTransparentMesh: 1
+--- !u!1 &806610054 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 334702107101612331, guid: 7f4712ab785efc04ba4824f7bbb99962, type: 3}
+  m_PrefabInstance: {fileID: 956254259}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &806610056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806610054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26abacbe393ac0c4b874f7008992ea12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flowers:
+  - flowerName: Black_Bat
+    flowerInPot: {fileID: 2043752096}
+  - flowerName: Fire_Lily
+    flowerInPot: {fileID: 1043982182}
+  - flowerName: Gibraltar_Champion
+    flowerInPot: {fileID: 1249831879}
+  - flowerName: Kadupul
+    flowerInPot: {fileID: 789315824}
+  - flowerName: Kokio
+    flowerInPot: {fileID: 1204084762}
+  - flowerName: Jade_Vine
+    flowerInPot: {fileID: 1453373670}
 --- !u!1 &824204087
 GameObject:
   m_ObjectHideFlags: 0
@@ -4650,6 +4690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43286bb586daa0c42be950c8bbbdfcd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flowerName: Black_Bat
   materialSource: {fileID: 2100000, guid: 6bedab9831e6a6748b063d3b82221855, type: 2}
   meshRenderer: {fileID: 116120488}
 --- !u!54 &865655404
@@ -5279,6 +5320,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.198115, y: 0.6804718, z: 9.435585}
   m_Center: {x: 0.06651345, y: 0.6005568, z: 1.6828796}
+--- !u!1 &1043982182 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4770395027898046611, guid: 7f4712ab785efc04ba4824f7bbb99962, type: 3}
+  m_PrefabInstance: {fileID: 956254259}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1060123348
 GameObject:
   m_ObjectHideFlags: 0
@@ -6155,6 +6201,11 @@ RectTransform:
   m_AnchoredPosition: {x: -0, y: -75}
   m_SizeDelta: {x: 0, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1204084762 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6168737037487235488, guid: 7f4712ab785efc04ba4824f7bbb99962, type: 3}
+  m_PrefabInstance: {fileID: 956254259}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1207943866
 GameObject:
   m_ObjectHideFlags: 0
@@ -6405,6 +6456,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240525952}
   m_CullTransparentMesh: 1
+--- !u!1 &1249831879 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7812671691347765417, guid: 7f4712ab785efc04ba4824f7bbb99962, type: 3}
+  m_PrefabInstance: {fileID: 956254259}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1251255358
 GameObject:
   m_ObjectHideFlags: 0
@@ -7065,6 +7121,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.1557765, y: 2.0284946, z: 4.737668}
   m_Center: {x: 0.00023001432, y: 1.0142473, z: -0.08030367}
+--- !u!1 &1453373670 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8402416576223515304, guid: 7f4712ab785efc04ba4824f7bbb99962, type: 3}
+  m_PrefabInstance: {fileID: 956254259}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1458268146
 GameObject:
   m_ObjectHideFlags: 0
@@ -7898,6 +7959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43286bb586daa0c42be950c8bbbdfcd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flowerName: Gibraltar_Champion
   materialSource: {fileID: 2100000, guid: 6bedab9831e6a6748b063d3b82221855, type: 2}
   meshRenderer: {fileID: 29914133}
 --- !u!54 &1684897885
@@ -9304,6 +9366,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043012008}
   m_CullTransparentMesh: 1
+--- !u!1 &2043752096 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7496219552798130961, guid: 7f4712ab785efc04ba4824f7bbb99962, type: 3}
+  m_PrefabInstance: {fileID: 956254259}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2057701328
 GameObject:
   m_ObjectHideFlags: 0

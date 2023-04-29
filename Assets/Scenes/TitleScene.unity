@@ -584,7 +584,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 868084950}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 43ca2b213894a12448dee19fea8d7d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -675,7 +675,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 919988510}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 43ca2b213894a12448dee19fea8d7d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -1025,7 +1025,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1136972076}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 43ca2b213894a12448dee19fea8d7d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -1398,6 +1398,18 @@ PrefabInstance:
     - target: {fileID: 4133811602060476834, guid: e7beacf95f735194299ff4ec6d6fdae6, type: 3}
       propertyPath: m_Name
       value: PF_TitleScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133811602877088859, guid: e7beacf95f735194299ff4ec6d6fdae6, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.8156863
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133811602877088859, guid: e7beacf95f735194299ff4ec6d6fdae6, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.9254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133811602877088859, guid: e7beacf95f735194299ff4ec6d6fdae6, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.65882355
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7beacf95f735194299ff4ec6d6fdae6, type: 3}

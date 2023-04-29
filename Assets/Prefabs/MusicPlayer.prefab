@@ -49,6 +49,13 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6efbf35b234b8b343a3d2b15a10548c7, type: 3}
   - {fileID: 8300000, guid: db1abce0c92780541889bc2c619b04b1, type: 3}
   pickSoundEffectClips: []
+  currentMusicState: 0
+  uiSounds:
+  - {fileID: 8300000, guid: 3cb25c3a470d5cd4f8c1de56e217cf8d, type: 3}
+  - {fileID: 8300000, guid: 79a5291610ad30b449ededb72e15bfd9, type: 3}
+  - {fileID: 8300000, guid: 0bbf2b226d1ca0f4bbd178434f6872f5, type: 3}
+  - {fileID: 8300000, guid: 719688b6ffe568340ac23c56a88957a5, type: 3}
+  - {fileID: 8300000, guid: 3f9ec57f508f31944867fe4479edf778, type: 3}
 --- !u!82 &5275563969637523015
 AudioSource:
   m_ObjectHideFlags: 0

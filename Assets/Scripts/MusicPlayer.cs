@@ -18,6 +18,15 @@ public class MusicPlayer : MonoBehaviour
         GameScene
     }
     [SerializeField] private MusicState currentMusicState;
+    public enum UISounds
+    {
+        Open,
+        Hover,
+        Select,
+        Back,
+        Close
+    }
+    [SerializeField] private AudioClip[] uiSounds;
 
     private void Awake()
     {
@@ -63,9 +72,29 @@ public class MusicPlayer : MonoBehaviour
     {
         StartCoroutine(FadeOut(1f));
     }
-    public void PlayOneShot(Vector3 loc)
+    public void PlayOneShot(UISounds sound)
     {
-
+        switch (sound)
+        {
+            case UISounds.Open:
+                musicSource.PlayOneShot(uiSounds[0]);
+                break;
+            case UISounds.Hover:
+                musicSource.PlayOneShot(uiSounds[1]);
+                break;
+            case UISounds.Select:
+                musicSource.PlayOneShot(uiSounds[2]);
+                break;
+            case UISounds.Back:
+                musicSource.PlayOneShot(uiSounds[3]);
+                break;
+            case UISounds.Close:
+                musicSource.PlayOneShot(uiSounds[4]);
+                break;
+            default:
+                break;
+        }
+        
     }
 
     private IEnumerator FadeOut(float duration)

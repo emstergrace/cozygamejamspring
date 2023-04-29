@@ -293,6 +293,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43286bb586daa0c42be950c8bbbdfcd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materialSource: {fileID: 2100000, guid: 6bedab9831e6a6748b063d3b82221855, type: 2}
+  meshRenderer: {fileID: 1638647320}
 --- !u!54 &88737194
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -367,6 +369,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 15, z: 20}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &116120488 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 1932934215805940514, guid: 7f4712ab785efc04ba4824f7bbb99962, type: 3}
+  m_PrefabInstance: {fileID: 956254259}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &120251156
 GameObject:
   m_ObjectHideFlags: 0
@@ -1036,6 +1043,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43286bb586daa0c42be950c8bbbdfcd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materialSource: {fileID: 2100000, guid: 6bedab9831e6a6748b063d3b82221855, type: 2}
+  meshRenderer: {fileID: 1510595919}
 --- !u!54 &392193845
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1178,6 +1187,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43286bb586daa0c42be950c8bbbdfcd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materialSource: {fileID: 2100000, guid: 6bedab9831e6a6748b063d3b82221855, type: 2}
+  meshRenderer: {fileID: 1054436320}
 --- !u!54 &496871741
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1247,7 +1258,7 @@ MonoBehaviour:
   m_Follow: {fileID: 543450652283204499}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 10
+    OrthographicSize: 4.66
     NearClipPlane: -100
     FarClipPlane: 1000
     Dutch: 0
@@ -1398,6 +1409,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43286bb586daa0c42be950c8bbbdfcd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materialSource: {fileID: 2100000, guid: 6bedab9831e6a6748b063d3b82221855, type: 2}
+  meshRenderer: {fileID: 1207308934}
 --- !u!65 &595886986
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1444,6 +1457,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43286bb586daa0c42be950c8bbbdfcd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materialSource: {fileID: 2100000, guid: 6bedab9831e6a6748b063d3b82221855, type: 2}
+  meshRenderer: {fileID: 1903560019}
 --- !u!54 &653995821
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2162,6 +2177,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43286bb586daa0c42be950c8bbbdfcd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materialSource: {fileID: 2100000, guid: 6bedab9831e6a6748b063d3b82221855, type: 2}
+  meshRenderer: {fileID: 116120488}
 --- !u!54 &865655404
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2454,7 +2471,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 4.66
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2478,7 +2495,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0.2339582, y: 0.38812846, z: -0.10254964, w: -0.8854962}
-  m_LocalPosition: {x: 2.1738794, y: 4.7894306, z: -3.2700005}
+  m_LocalPosition: {x: 2.1738794, y: 4.7894306, z: -7.072397}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3251,6 +3268,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6352427, y: 0.8351296, z: 3.5838401}
   m_Center: {x: -0.033250548, y: 0.6506056, z: 1.0288631}
+--- !u!23 &1510595919 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2211990795284964106, guid: 7f4712ab785efc04ba4824f7bbb99962, type: 3}
+  m_PrefabInstance: {fileID: 956254259}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1534177656
 GameObject:
   m_ObjectHideFlags: 0
@@ -3401,6 +3423,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!23 &1638647320 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5977636615939666251, guid: 7f4712ab785efc04ba4824f7bbb99962, type: 3}
+  m_PrefabInstance: {fileID: 956254259}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1664157154
 GameObject:
   m_ObjectHideFlags: 0
@@ -3508,6 +3535,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43286bb586daa0c42be950c8bbbdfcd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  materialSource: {fileID: 2100000, guid: 6bedab9831e6a6748b063d3b82221855, type: 2}
+  meshRenderer: {fileID: 2018697456}
 --- !u!54 &1684897885
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4892,7 +4921,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 3
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!4 &5901452234382532880
 Transform:

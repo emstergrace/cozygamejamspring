@@ -12,6 +12,9 @@ public class Journal : MonoBehaviour
     [SerializeField] 
     private GameObject journal_Panel;
 
+    [SerializeField]
+    private GameObject sticker;
+
     private MusicPlayer musicPlayer;
 
     private void Awake()
@@ -24,7 +27,7 @@ public class Journal : MonoBehaviour
         inputActions.Journal.CloseJournal.performed += OnCloseJournal;
     }
 
-    public void ActivateFlower(string flowerName)
+    public void ActivateFlower(string flowerName, bool foundAll)
     {
         OpenJournal();
 
@@ -34,6 +37,11 @@ public class Journal : MonoBehaviour
             {
                 flowerSection.flowerSection.StartWritingFlowerSection();
             }
+        }
+
+        if (foundAll)
+        {
+            sticker.SetActive(true);
         }
     }
 

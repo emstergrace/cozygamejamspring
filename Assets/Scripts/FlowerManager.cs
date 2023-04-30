@@ -22,6 +22,6 @@ public class FlowerManager : MonoBehaviour
         foundFlowers++;
         flowerAmountDisplay.SetAmount(foundFlowers);
         centralTable.AddFlower(flowerName);
-        journal.ActivateFlower(flowerName);
+        journal.ActivateFlower(flowerName, foundFlowers == maxAmountFlowers);
     }
 }

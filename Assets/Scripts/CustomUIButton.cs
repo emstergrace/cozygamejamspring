@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
@@ -39,6 +38,10 @@ public class CustomUIButton : Button
         base.OnPointerUp(eventData);
     }
 
+    public void Quit()
+    {
+        Application.Quit();
+    }
 
     private const string TitleScene = "TitleScene";
     private const string GameScene = "MainScene";

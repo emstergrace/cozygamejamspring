@@ -14,7 +14,8 @@ public class MusicPlayer : MonoBehaviour
     public enum MusicState
     {
         TitleMenu,
-        GameScene
+        GameScene,
+        Paused
     }
     [SerializeField] private MusicState currentMusicState;
     public enum UISounds
@@ -63,6 +64,11 @@ public class MusicPlayer : MonoBehaviour
             case MusicState.GameScene:
                 currentMusicState = MusicState.GameScene;
                 musicSource.clip = musicClips[1];
+                musicSource.Play();
+                break;
+            case MusicState.Paused:
+                currentMusicState = MusicState.Paused;
+                musicSource.clip = musicClips[2];
                 musicSource.Play();
                 break;
             default:

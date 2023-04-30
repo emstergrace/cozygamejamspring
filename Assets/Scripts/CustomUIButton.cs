@@ -38,4 +38,42 @@ public class CustomUIButton : Button
     {
         base.OnPointerUp(eventData);
     }
+
+
+    private const string TitleScene = "TitleScene";
+    private const string GameScene = "MainScene";
+    private const string LoadingScene = "LoadingScene";
+    public void GoToGameScene()
+    {
+        if(GoToGameSceneCo == null)
+        {
+            GoToGameSceneCo = StartCoroutine(GoToGameSceneCoroutine());
+        }
+        
+    }
+    private Coroutine GoToGameSceneCo;
+    private IEnumerator GoToGameSceneCoroutine()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(LoadingScene, UnityEngine.SceneManagement.LoadSceneMode.Additive);
+
+        if (MusicPlayer.instance != null)
+        {
+            MusicPlayer.instance.Destroy();
+            
+        }
+
+        yield return new WaitForSeconds(5f);
+
+        AsyncOperation asyncOperation = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(GameScene, UnityEngine.SceneManagement.LoadSceneMode.Additive);
+        while(!asyncOperation.isDone)
+        {
+            yield return null;
+        }
+        UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(TitleScene);
+
+        LoadingManager.instance.Destroy();
+
+        GoToGameSceneCo = null;
+        yield break;
+    }
 }

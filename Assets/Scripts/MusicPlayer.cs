@@ -40,10 +40,6 @@ public class MusicPlayer : MonoBehaviour
             instance = this;
             musicSource = GetComponent<AudioSource>();
         }
-        else
-        {
-            Destroy(this.gameObject);
-        }
     }
     private void Start()
     {
@@ -76,6 +72,10 @@ public class MusicPlayer : MonoBehaviour
     public void Stop()
     {
         StartCoroutine(FadeOut(1f));
+    }
+    public void Destroy()
+    {
+        StartCoroutine(FadeOut(1f, true));
     }
     public void PlayOneShot(UISounds sound)
     {
@@ -117,7 +117,7 @@ public class MusicPlayer : MonoBehaviour
         }
     }
 
-    private IEnumerator FadeOut(float duration)
+    private IEnumerator FadeOut(float duration, bool destroy = false)
     {
         float startVolume = musicSource.volume;
 
@@ -130,6 +130,11 @@ public class MusicPlayer : MonoBehaviour
         musicSource.Stop();
         musicSource.clip = null;
         musicSource.volume = startVolume;
+
+        if(destroy)
+        {
+            Destroy(this.gameObject);
+        }
 
         yield break;
     }

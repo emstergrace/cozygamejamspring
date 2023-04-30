@@ -510,7 +510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flowerName: Kokio
   materialSource: {fileID: 2100000, guid: 6bedab9831e6a6748b063d3b82221855, type: 2}
-  meshRenderer: {fileID: 0}
+  meshRenderer: {fileID: 88737197}
 --- !u!54 &88737194
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -540,6 +540,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5361487, y: 1.1131344, z: 0.4576258}
   m_Center: {x: -0.0553291, y: 0.4681251, z: -0.01839584}
+--- !u!23 &88737197 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8751038477870031486, guid: 7f4712ab785efc04ba4824f7bbb99962, type: 3}
+  m_PrefabInstance: {fileID: 956254259}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &101597229
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,7 +603,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This delicate little flower
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -924,7 +929,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Considered one of the rarest
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -1194,7 +1199,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mexico and South America, but is hard
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -1661,6 +1666,7 @@ RectTransform:
   m_Children:
   - {fileID: 1297641227}
   - {fileID: 1702896555}
+  - {fileID: 388579692}
   m_Father: {fileID: 387732070}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1886,6 +1892,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 238080949}
+  - component: {fileID: 238080950}
   m_Layer: 0
   m_Name: Black_Bat_Section
   m_TagString: Untagged
@@ -1915,6 +1922,36 @@ RectTransform:
   m_AnchoredPosition: {x: 230, y: -73}
   m_SizeDelta: {x: 360, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &238080950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238080948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88094f0635051874b923aaf018128c11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.04
+  textLines:
+  - text: Black Bat
+    line: {fileID: 740329995}
+  - text: (Tacca chantrieri)
+    line: {fileID: 954142785}
+  - text: Malaysia
+    line: {fileID: 1776377873}
+  - text: The Black Bat flower is
+    line: {fileID: 831639486}
+  - text: one of the world's only naturally black
+    line: {fileID: 1786975973}
+  - text: flowers. It loves the shade and grows in
+    line: {fileID: 1366242398}
+  - text: dark, shady areas in tropical
+    line: {fileID: 1349551638}
+  - text: rainforests.
+    line: {fileID: 2084374036}
 --- !u!1 &241669200
 GameObject:
   m_ObjectHideFlags: 0
@@ -1973,7 +2010,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A member of the pean and bean
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -2690,6 +2727,141 @@ RectTransform:
   m_AnchoredPosition: {x: 95, y: 2.4}
   m_SizeDelta: {x: 240, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &388579691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 388579692}
+  - component: {fileID: 388579694}
+  - component: {fileID: 388579693}
+  m_Layer: 0
+  m_Name: Name2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &388579692
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388579691}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 192238645}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 27, y: -13}
+  m_SizeDelta: {x: 152, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &388579693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388579691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
+  m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 12
+  m_fontSizeBase: 12
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -79.001656, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &388579694
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388579691}
+  m_CullTransparentMesh: 1
 --- !u!1 &390235111
 GameObject:
   m_ObjectHideFlags: 0
@@ -2748,7 +2920,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'poisonous properties and should be '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -2962,7 +3134,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: in 1841. Its stems can reach up to 18cm!
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -3097,7 +3269,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: discovered in 1841 on the slopes of Mount
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -3209,7 +3381,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.1, y: -0.4}
+  m_AnchoredPosition: {x: 15.7, y: -0.4}
   m_SizeDelta: {x: 152, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &456447028
@@ -3232,7 +3404,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Moloka\u02BBi, Hawai'i"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -3266,7 +3438,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -3359,6 +3531,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e59750d3e34f0404cabc99af39bb3aa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flowerSections:
+  - flowerName: Black_Bat
+    flowerSection: {fileID: 238080950}
+  - flowerName: Fire_Lily
+    flowerSection: {fileID: 1278047687}
+  - flowerName: Gibraltar_Champion
+    flowerSection: {fileID: 1506056318}
+  - flowerName: Kadupul
+    flowerSection: {fileID: 495744757}
+  - flowerName: Jade_Vine
+    flowerSection: {fileID: 1424172822}
+  - flowerName: Kokio
+    flowerSection: {fileID: 1944900109}
   journal_Panel: {fileID: 1207943866}
 --- !u!1 &495744755
 GameObject:
@@ -3369,6 +3554,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 495744756}
+  - component: {fileID: 495744757}
   m_Layer: 0
   m_Name: Kadupul_Section
   m_TagString: Untagged
@@ -3398,6 +3584,36 @@ RectTransform:
   m_AnchoredPosition: {x: -200, y: -65}
   m_SizeDelta: {x: 360, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &495744757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495744755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88094f0635051874b923aaf018128c11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.04
+  textLines:
+  - text: Kadupul
+    line: {fileID: 1657792105}
+  - text: (Epiphyllum oxypetalum)
+    line: {fileID: 1411372725}
+  - text: South America
+    line: {fileID: 1959252473}
+  - text: Also known as the Queen of
+    line: {fileID: 1876479832}
+  - text: the Night, this flower only blooms at
+    line: {fileID: 1214865200}
+  - text: night. It is known to grow across
+    line: {fileID: 2048819499}
+  - text: Mexico and South America, but is hard
+    line: {fileID: 158062485}
+  - text: to find due to its nocturnal lifestyle.
+    line: {fileID: 1768542188}
 --- !u!1 &496871738 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1258663076483281948, guid: 7f4712ab785efc04ba4824f7bbb99962, type: 3}
@@ -3804,7 +4020,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 576990845}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3813,7 +4029,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 47.4, y: -0}
+  m_AnchoredPosition: {x: 53, y: -0}
   m_SizeDelta: {x: 152, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &576990847
@@ -3836,7 +4052,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Koki'o (Kokia cookei)
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -3870,7 +4086,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -3972,7 +4188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flowerName: Fire_Lily
   materialSource: {fileID: 2100000, guid: 6bedab9831e6a6748b063d3b82221855, type: 2}
-  meshRenderer: {fileID: 0}
+  meshRenderer: {fileID: 595886989}
 --- !u!65 &595886986
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4002,6 +4218,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!23 &595886989 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3533345455498110032, guid: 7f4712ab785efc04ba4824f7bbb99962, type: 3}
+  m_PrefabInstance: {fileID: 956254259}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &601387054 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8638788549500551450, guid: 7f4712ab785efc04ba4824f7bbb99962, type: 3}
@@ -4079,7 +4300,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: handled with care!
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -4156,7 +4377,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613580282}
   m_CullTransparentMesh: 1
---- !u!1 &628203568
+--- !u!1 &623370234
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4164,43 +4385,43 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 628203569}
-  - component: {fileID: 628203571}
-  - component: {fileID: 628203570}
+  - component: {fileID: 623370235}
+  - component: {fileID: 623370237}
+  - component: {fileID: 623370236}
   m_Layer: 0
-  m_Name: Origin
+  m_Name: Name2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &628203569
+--- !u!224 &623370235
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 628203568}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 623370234}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2333390}
-  m_RootOrder: 1
+  m_Father: {fileID: 1546488394}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -28.9, y: -0}
+  m_AnchoredPosition: {x: 41.1, y: -11}
   m_SizeDelta: {x: 152, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &628203570
+--- !u!114 &623370236
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 628203568}
+  m_GameObject: {fileID: 623370234}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -4214,7 +4435,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Philippines
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -4248,7 +4469,142 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &623370237
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623370234}
+  m_CullTransparentMesh: 1
+--- !u!1 &628203568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 628203569}
+  - component: {fileID: 628203571}
+  - component: {fileID: 628203570}
+  m_Layer: 0
+  m_Name: Origin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &628203569
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628203568}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2333390}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 13.2, y: 0}
+  m_SizeDelta: {x: 152, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &628203570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628203568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
+  m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 12
+  m_fontSizeBase: 12
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -4957,6 +5313,7 @@ MonoBehaviour:
   maxAmountFlowers: 6
   flowerAmountDisplay: {fileID: 1534177658}
   centralTable: {fileID: 806610056}
+  journal: {fileID: 495024455}
 --- !u!1 &721456571
 GameObject:
   m_ObjectHideFlags: 0
@@ -5095,7 +5452,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 47, y: 0.4}
+  m_AnchoredPosition: {x: 64, y: 3.6}
   m_SizeDelta: {x: 152, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &740329995
@@ -5118,7 +5475,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Black Bat (Tacca chantrieri)
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -5128,7 +5485,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 0.17254902, g: 0.17254902, b: 0.17254902, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -5152,7 +5509,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -5181,7 +5538,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 14.72414, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5446,7 +5803,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: family, this blueish green plant was
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -5723,7 +6080,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -33.9, y: -1.1}
+  m_AnchoredPosition: {x: 11.9, y: -1.1}
   m_SizeDelta: {x: 152, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &831073585
@@ -5746,7 +6103,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Zimbabwe
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -5780,7 +6137,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -5881,7 +6238,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The Black Bat flower is
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -6135,7 +6492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flowerName: Black_Bat
   materialSource: {fileID: 2100000, guid: 6bedab9831e6a6748b063d3b82221855, type: 2}
-  meshRenderer: {fileID: 0}
+  meshRenderer: {fileID: 865655407}
 --- !u!54 &865655404
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6165,6 +6522,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.9919305, z: 0.36015934}
   m_Center: {x: 0.000000009804111, y: 1.0483038, z: 0.1343029}
+--- !u!23 &865655407 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2724535348377583870, guid: 7f4712ab785efc04ba4824f7bbb99962, type: 3}
+  m_PrefabInstance: {fileID: 956254259}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &891857194
 GameObject:
   m_ObjectHideFlags: 0
@@ -6313,7 +6675,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'growing in the Upper Rock Nature '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -6473,6 +6835,141 @@ RectTransform:
   m_AnchoredPosition: {x: -1.4000015, y: 1.2999992}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &954142783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 954142784}
+  - component: {fileID: 954142786}
+  - component: {fileID: 954142785}
+  m_Layer: 0
+  m_Name: Name2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &954142784
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954142783}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2057701329}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 52.4, y: -11}
+  m_SizeDelta: {x: 152, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &954142785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954142783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
+  m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0.17254902, g: 0.17254902, b: 0.17254902, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 12
+  m_fontSizeBase: 12
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 14.72414, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &954142786
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954142783}
+  m_CullTransparentMesh: 1
 --- !u!1001 &956254259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6814,7 +7311,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: extinct in the 1950s. In 1970, a single
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -6994,7 +7491,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: dry savannahs and thickets. It has many
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -7106,7 +7603,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 47.4, y: -0}
+  m_AnchoredPosition: {x: 48.8, y: 0}
   m_SizeDelta: {x: 152, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1029028702
@@ -7129,7 +7626,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Gibraltar Campion (Silene tomentosa)
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -7163,7 +7660,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -7404,7 +7901,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: sprout was found . There are now 32.
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -7623,7 +8120,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: was believed to be extinct from 1985 to
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -8108,7 +8605,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 47.4, y: -0.3}
+  m_AnchoredPosition: {x: 48.7, y: -0.3}
   m_SizeDelta: {x: 152, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1211874518
@@ -8131,7 +8628,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Fire Lily (Gloriosa)
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -8165,7 +8662,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -8266,7 +8763,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: the Night, this flower only blooms at
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -8401,7 +8898,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'rocks or low bushes and prefers '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -8789,7 +9286,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1994 when a little spud was found '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -8974,7 +9471,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'world, this flower was presumed to be '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -9060,6 +9557,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1278047686}
+  - component: {fileID: 1278047687}
   m_Layer: 0
   m_Name: Fire_Lily_Section
   m_TagString: Untagged
@@ -9089,6 +9587,34 @@ RectTransform:
   m_AnchoredPosition: {x: 200, y: 0}
   m_SizeDelta: {x: 360, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1278047687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278047685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88094f0635051874b923aaf018128c11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.04
+  textLines:
+  - text: Fire Lily (Gloriosa)
+    line: {fileID: 1211874518}
+  - text: Zimbabwe
+    line: {fileID: 831073585}
+  - text: The Fire Lily sprawls over
+    line: {fileID: 2145644468}
+  - text: rocks or low bushes and prefers
+    line: {fileID: 1219049202}
+  - text: dry savannahs and thickets. It has many
+    line: {fileID: 1012008577}
+  - text: poisonous properties and should be
+    line: {fileID: 390235113}
+  - text: handled with care!
+    line: {fileID: 613580284}
 --- !u!1 &1280553965 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3069602434168306880, guid: 7f4712ab785efc04ba4824f7bbb99962, type: 3}
@@ -9338,7 +9864,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'dark, shady areas in tropical '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -9473,7 +9999,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: flowers. It loves the shade and grows in
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -9608,7 +10134,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Reserve. '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -9765,6 +10291,141 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.73447514, y: 0.8234875, z: 0.6539853}
   m_Center: {x: -0.101602994, y: 0.08825624, z: 0.055431407}
+--- !u!1 &1411372723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1411372724}
+  - component: {fileID: 1411372726}
+  - component: {fileID: 1411372725}
+  m_Layer: 0
+  m_Name: Name2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1411372724
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411372723}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2045122267}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 40.7, y: -13}
+  m_SizeDelta: {x: 152, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1411372725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411372723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
+  m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 12
+  m_fontSizeBase: 12
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -38.170715, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1411372726
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411372723}
+  m_CullTransparentMesh: 1
 --- !u!1 &1419577199
 GameObject:
   m_ObjectHideFlags: 0
@@ -9858,6 +10519,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1424172821}
+  - component: {fileID: 1424172822}
   m_Layer: 0
   m_Name: Jade_Vine_Section
   m_TagString: Untagged
@@ -9887,6 +10549,36 @@ RectTransform:
   m_AnchoredPosition: {x: -200, y: 0}
   m_SizeDelta: {x: 360, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1424172822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424172820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88094f0635051874b923aaf018128c11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.04
+  textLines:
+  - text: Jade Vine
+    line: {fileID: 1702896556}
+  - text: (Strongylodon macrobotrys)
+    line: {fileID: 388579693}
+  - text: Philippines
+    line: {fileID: 628203570}
+  - text: A member of the pean and bean
+    line: {fileID: 241669202}
+  - text: family, this blueish green plant was
+    line: {fileID: 805855688}
+  - text: discovered in 1841 on the slopes of Mount
+    line: {fileID: 455049141}
+  - text: Makiling by US lieutenant Charles Wilkes
+    line: {fileID: 2066975575}
+  - text: in 1841. Its stems can reach up to 18cm!
+    line: {fileID: 444893879}
 --- !u!143 &1425413242
 CharacterController:
   m_ObjectHideFlags: 0
@@ -10041,6 +10733,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1506056317}
+  - component: {fileID: 1506056318}
   m_Layer: 0
   m_Name: Gibraltar_Campion_Section
   m_TagString: Untagged
@@ -10070,6 +10763,34 @@ RectTransform:
   m_AnchoredPosition: {x: 200, y: 65}
   m_SizeDelta: {x: 360, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1506056318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506056316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88094f0635051874b923aaf018128c11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.04
+  textLines:
+  - text: Gibraltar Campion (Silene tomentosa)
+    line: {fileID: 1029028702}
+  - text: Gibraltar
+    line: {fileID: 2047181460}
+  - text: This delicate little flower
+    line: {fileID: 101597231}
+  - text: was believed to be extinct from 1985 to
+    line: {fileID: 1096633566}
+  - text: 1994 when a little spud was found
+    line: {fileID: 1244608904}
+  - text: growing in the Upper Rock Nature
+    line: {fileID: 929217415}
+  - text: Reserve.
+    line: {fileID: 1368576220}
 --- !u!1 &1534177656
 GameObject:
   m_ObjectHideFlags: 0
@@ -10214,6 +10935,7 @@ RectTransform:
   m_Children:
   - {fileID: 525138760}
   - {fileID: 576990846}
+  - {fileID: 623370235}
   m_Father: {fileID: 1858374482}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10323,7 +11045,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1657792103}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10332,7 +11054,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 47.4, y: -0}
+  m_AnchoredPosition: {x: 80, y: -0}
   m_SizeDelta: {x: 152, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1657792105
@@ -10355,7 +11077,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Kadupul (Epiphyllum oxypetalum)
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -10389,7 +11111,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -10541,7 +11263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flowerName: Gibraltar_Champion
   materialSource: {fileID: 2100000, guid: 6bedab9831e6a6748b063d3b82221855, type: 2}
-  meshRenderer: {fileID: 0}
+  meshRenderer: {fileID: 1684897888}
 --- !u!54 &1684897885
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10571,6 +11293,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.54747534, y: 1.6581213, z: 0.3540063}
   m_Center: {x: -0.0017788729, y: 0.94019854, z: 0.083231844}
+--- !u!23 &1684897888 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2865028594032847040, guid: 7f4712ab785efc04ba4824f7bbb99962, type: 3}
+  m_PrefabInstance: {fileID: 956254259}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1702896554
 GameObject:
   m_ObjectHideFlags: 0
@@ -10606,7 +11333,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 37.2, y: -0}
+  m_AnchoredPosition: {x: 72, y: 0}
   m_SizeDelta: {x: 152, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1702896556
@@ -10629,9 +11356,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Jade Vine (Strongylodon macrobotrys)
-
-'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -10665,7 +11390,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -10856,7 +11581,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'and most endangered flowers in the '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -11030,7 +11755,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: to find due to its nocturnal lifestyle.
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -11226,7 +11951,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -30.4, y: -0.4}
+  m_AnchoredPosition: {x: 15.1, y: -0.4}
   m_SizeDelta: {x: 152, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1776377873
@@ -11249,7 +11974,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Malaysia
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -11283,7 +12008,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -11384,7 +12109,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'one of the world''s only naturally black '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -12170,7 +12895,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Also known as the Queen of
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -12422,6 +13147,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1944900108}
+  - component: {fileID: 1944900109}
   m_Layer: 0
   m_Name: Kokio_Section
   m_TagString: Untagged
@@ -12451,6 +13177,36 @@ RectTransform:
   m_AnchoredPosition: {x: -200, y: 65}
   m_SizeDelta: {x: 360, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1944900109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944900107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88094f0635051874b923aaf018128c11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.04
+  textLines:
+  - text: Koki'o
+    line: {fileID: 576990847}
+  - text: (Kokia cookei)
+    line: {fileID: 623370236}
+  - text: "Moloka\u02BBi, Hawai'i"
+    line: {fileID: 456447028}
+  - text: Considered one of the rarest
+    line: {fileID: 133536057}
+  - text: and most endangered flowers in the
+    line: {fileID: 1748049833}
+  - text: world, this flower was presumed to be
+    line: {fileID: 1257596022}
+  - text: extinct in the 1950s. In 1970, a single
+    line: {fileID: 987035413}
+  - text: sprout was found . There are now 32.
+    line: {fileID: 1068109880}
 --- !u!1 &1959252471
 GameObject:
   m_ObjectHideFlags: 0
@@ -12486,7 +13242,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -13, y: -0.7}
+  m_AnchoredPosition: {x: 12.3, y: -0.7}
   m_SizeDelta: {x: 152, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1959252473
@@ -12509,7 +13265,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: South America
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -12543,7 +13299,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -13150,6 +13906,7 @@ RectTransform:
   m_Children:
   - {fileID: 676191137}
   - {fileID: 1657792104}
+  - {fileID: 1411372724}
   m_Father: {fileID: 1756063876}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13193,7 +13950,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -29.2, y: -0}
+  m_AnchoredPosition: {x: 12, y: -0}
   m_SizeDelta: {x: 152, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2047181460
@@ -13216,7 +13973,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Gibraltar
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -13250,7 +14007,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -13351,7 +14108,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: night. It is known to grow across
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -13458,6 +14215,7 @@ RectTransform:
   m_Children:
   - {fileID: 1180644885}
   - {fileID: 740329994}
+  - {fileID: 954142784}
   m_Father: {fileID: 1774632797}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13524,7 +14282,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Makiling by US lieutenant Charles Wilkes
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -13701,7 +14459,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: rainforests.
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
@@ -14162,7 +14920,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The Fire Lily sprawls over '
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}
   m_sharedMaterial: {fileID: -8637595683182147199, guid: c19eef2f1bb0be34dae82973a483a187, type: 2}

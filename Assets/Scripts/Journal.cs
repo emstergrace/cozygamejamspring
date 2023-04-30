@@ -1,8 +1,12 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class Journal : MonoBehaviour
 {
+
+    [SerializeField]
+    private KeyValuePair[] flowerSections;
 
     [SerializeField] 
     private GameObject journal_Panel;
@@ -13,6 +17,19 @@ public class Journal : MonoBehaviour
         inputActions.Journal.Enable();
         inputActions.Journal.OpenJournal.performed += OnToggleJournal;
         inputActions.Journal.CloseJournal.performed += OnCloseJournal;
+    }
+
+    public void ActivateFlower(string flowerName)
+    {
+        OpenJournal();
+
+        foreach (KeyValuePair flowerSection in flowerSections)
+        {
+            if (flowerSection.flowerName == flowerName)
+            {
+                flowerSection.flowerSection.StartWritingFlowerSection();
+            }
+        }
     }
 
     public void ToggleJournal()
@@ -30,6 +47,12 @@ public class Journal : MonoBehaviour
     public void CloseJournal()
     {
         journal_Panel.SetActive(false);
+
+        foreach (KeyValuePair flowerSection in flowerSections)
+        {
+           flowerSection.flowerSection.FinishWritingIfInProcess();
+        }
+        
     }
 
 
@@ -46,5 +69,19 @@ public class Journal : MonoBehaviour
     private void OnCloseJournal(InputAction.CallbackContext obj)
     {
         CloseJournal();
+    }
+
+
+    [Serializable]
+    private struct KeyValuePair
+    {
+        public string flowerName;
+        public FlowerSection flowerSection;
+
+        public KeyValuePair(string flowerName, FlowerSection flowerSection)
+        {
+            this.flowerName = flowerName;
+            this.flowerSection = flowerSection;
+        }
     }
 }

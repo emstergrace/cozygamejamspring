@@ -48,7 +48,14 @@ MonoBehaviour:
   musicClips:
   - {fileID: 8300000, guid: 6efbf35b234b8b343a3d2b15a10548c7, type: 3}
   - {fileID: 8300000, guid: db1abce0c92780541889bc2c619b04b1, type: 3}
-  pickSoundEffectClips: []
+  - {fileID: 8300000, guid: 29578fac1cd139d42a93950e49085994, type: 3}
+  pickSoundEffectClips:
+  - {fileID: 8300000, guid: f8b6b96d1aa00d3438e38c978105d63c, type: 3}
+  - {fileID: 8300000, guid: 8655bd6fbb0f27645a877619d693c676, type: 3}
+  - {fileID: 8300000, guid: a7dbb4b1c10a53447b538a11edfe7786, type: 3}
+  - {fileID: 8300000, guid: c3af8fef6c66c0d47ac68548545cf1c1, type: 3}
+  - {fileID: 8300000, guid: 82d4984be34fbf249b9c9226b603607f, type: 3}
+  - {fileID: 8300000, guid: be7e1e14242a91e47b09d532faf10752, type: 3}
   currentMusicState: 0
   uiSounds:
   - {fileID: 8300000, guid: 3cb25c3a470d5cd4f8c1de56e217cf8d, type: 3}
@@ -56,6 +63,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0bbf2b226d1ca0f4bbd178434f6872f5, type: 3}
   - {fileID: 8300000, guid: 719688b6ffe568340ac23c56a88957a5, type: 3}
   - {fileID: 8300000, guid: 3f9ec57f508f31944867fe4479edf778, type: 3}
+  journalSounds:
+  - {fileID: 8300000, guid: 00864cfa7f5af5448862848b4e8b8d5a, type: 3}
+  - {fileID: 8300000, guid: 5351b8930fda10742b70646fce62ce35, type: 3}
 --- !u!82 &5275563969637523015
 AudioSource:
   m_ObjectHideFlags: 0

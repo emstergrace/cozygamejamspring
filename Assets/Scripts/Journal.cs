@@ -13,7 +13,10 @@ public class Journal : MonoBehaviour
     private GameObject journal_Panel;
 
     [SerializeField]
-    private GameObject sticker;
+    private GameObject unfinishedSticker;
+
+    [SerializeField]
+    private GameObject finishedSticker;
 
     private MusicPlayer musicPlayer;
 
@@ -41,7 +44,8 @@ public class Journal : MonoBehaviour
 
         if (foundAll)
         {
-            sticker.SetActive(true);
+            unfinishedSticker.SetActive(false);
+            finishedSticker.SetActive(true);
         }
     }
 

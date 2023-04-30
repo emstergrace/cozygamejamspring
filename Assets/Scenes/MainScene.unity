@@ -12421,6 +12421,10 @@ PrefabInstance:
       propertyPath: currentMusicState
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5275563969637523014, guid: 050f0ca2b85d4d549b3037e01b6df039, type: 3}
+      propertyPath: musicClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8d08ebb19591eeb44a2c56cdcddaabef, type: 3}
     - target: {fileID: 5275563969637523015, guid: 050f0ca2b85d4d549b3037e01b6df039, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 

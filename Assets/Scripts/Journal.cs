@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static MusicPlayer;
 
 public class Journal : MonoBehaviour
 {
@@ -11,8 +12,12 @@ public class Journal : MonoBehaviour
     [SerializeField] 
     private GameObject journal_Panel;
 
+    private MusicPlayer musicPlayer;
+
     private void Awake()
     {
+        musicPlayer = FindAnyObjectByType<MusicPlayer>();
+
         PlayerInputActions inputActions = new PlayerInputActions();
         inputActions.Journal.Enable();
         inputActions.Journal.OpenJournal.performed += OnToggleJournal;
@@ -46,6 +51,7 @@ public class Journal : MonoBehaviour
 
     public void CloseJournal()
     {
+        musicPlayer.PlayOneShot(JournalSounds.Close);
         journal_Panel.SetActive(false);
 
         foreach (KeyValuePair flowerSection in flowerSections)
@@ -58,6 +64,7 @@ public class Journal : MonoBehaviour
 
     public void OpenJournal()
     {
+        musicPlayer.PlayOneShot(JournalSounds.Open);
         journal_Panel.SetActive(true);
     }
 

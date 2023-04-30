@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MusicPlayer : MonoBehaviour
@@ -26,7 +25,13 @@ public class MusicPlayer : MonoBehaviour
         Back,
         Close
     }
+    public enum JournalSounds
+    {
+        Open,
+        Close
+    }
     [SerializeField] private AudioClip[] uiSounds;
+    [SerializeField] private AudioClip[] journalSounds;
 
     private void Awake()
     {
@@ -94,7 +99,22 @@ public class MusicPlayer : MonoBehaviour
             default:
                 break;
         }
-        
+     
+    }
+
+    public void PlayOneShot(JournalSounds sound)
+    {
+        switch (sound)
+        {
+            case JournalSounds.Open:
+                musicSource.PlayOneShot(journalSounds[0]);
+                break;
+            case JournalSounds.Close:
+                musicSource.PlayOneShot(journalSounds[1]);
+                break;
+            default:
+                break;
+        }
     }
 
     private IEnumerator FadeOut(float duration)

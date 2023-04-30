@@ -17,16 +17,15 @@ public class FlowerSection : MonoBehaviour
 
     private float nextUpdate;
 
-    // Start is called before the first frame update
-    void Start()
+    private ScribblingPlayer player;
+
+    private void Awake()
     {
-        nextUpdate = 0; 
-        currentLetter = 0; 
-        currentLine = 0;
+        player = FindAnyObjectByType<ScribblingPlayer>();
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (!writing) { return; }
         if (Time.time >= nextUpdate)
@@ -40,7 +39,7 @@ public class FlowerSection : MonoBehaviour
             {
                 currentLine++;
                 currentLetter = 0;
-                if (currentLine >= textLines.Length) writing = false;
+                if (currentLine >= textLines.Length) StopWriting();
             }
             
         }
@@ -49,13 +48,20 @@ public class FlowerSection : MonoBehaviour
     public void StartWritingFlowerSection()
     {
         writing = true;
+        player.StartScribbling();
+    }
+
+    private void StopWriting()
+    {
+        writing = false;
+        player.StopScribbling();
     }
 
     public void FinishWritingIfInProcess()
     {
         if (!writing) return;
 
-        writing = false;
+        StopWriting();
 
         foreach (TextLine textLine in textLines)
         {

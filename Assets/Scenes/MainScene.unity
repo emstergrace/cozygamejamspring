@@ -12121,6 +12121,10 @@ PrefabInstance:
       propertyPath: currentMusicState
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5275563969637523015, guid: 050f0ca2b85d4d549b3037e01b6df039, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 684dbac2f315780419bbc57cc306c724, type: 2}
     - target: {fileID: 5275563969637523017, guid: 050f0ca2b85d4d549b3037e01b6df039, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -14686,7 +14690,7 @@ AudioSource:
   m_GameObject: {fileID: 1918006230}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 684dbac2f315780419bbc57cc306c724, type: 2}
   m_audioClip: {fileID: 8300000, guid: 74cb0cfff82262a4cb26d2ffe3f1d31d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

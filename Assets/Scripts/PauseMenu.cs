@@ -40,12 +40,20 @@ public class PauseMenu : MonoBehaviour
 
     public void PauseGame()
     {
+        if(MusicPlayer.instance != null)
+        {
+            MusicPlayer.instance.Play(MusicPlayer.MusicState.Paused);
+        }
         panel.gameObject.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
     }
     public void UnPauseGame()
     {
+        if (MusicPlayer.instance != null)
+        {
+            MusicPlayer.instance.Play(MusicPlayer.MusicState.GameScene);
+        }
         panel.gameObject.SetActive(false);
         Time.timeScale = 1.0f;
         isPaused = false;

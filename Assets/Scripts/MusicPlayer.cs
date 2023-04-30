@@ -33,6 +33,7 @@ public class MusicPlayer : MonoBehaviour
     }
     [SerializeField] private AudioClip[] uiSounds;
     [SerializeField] private AudioClip[] journalSounds;
+    [SerializeField] private AudioClip[] footstepSounds;
 
     private void Awake()
     {
@@ -49,11 +50,7 @@ public class MusicPlayer : MonoBehaviour
 
     public void Play(MusicState st)
     {
-        if (musicClips.Length <= 0) { return;}
-        if (musicSource.clip != null && musicSource.isPlaying)
-        {
-            Stop();
-        }
+        if (musicClips.Length <= 0) { return; }
         switch (st)
         {
             case MusicState.TitleMenu:
@@ -143,5 +140,11 @@ public class MusicPlayer : MonoBehaviour
         }
 
         yield break;
+    }
+
+    public void PlayRandomFootsteps()
+    {
+        int rand = Random.Range(0, footstepSounds.Length);
+        musicSource.PlayOneShot(footstepSounds[rand]);
     }
 }

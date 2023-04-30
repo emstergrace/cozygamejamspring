@@ -1472,6 +1472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1394303262}
   - component: {fileID: 1394303263}
+  - component: {fileID: 1394303264}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -1554,8 +1555,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1677261633}
-        m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
+      - m_Target: {fileID: 1394303264}
+        m_TargetAssemblyTypeName: AudioSlider, Assembly-CSharp
         m_MethodName: SetVolume
         m_Mode: 0
         m_Arguments:
@@ -1566,6 +1567,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1394303264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394303261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a0f420541335ed4bb6313dbfd33cf48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: 684dbac2f315780419bbc57cc306c724, type: 2}
 --- !u!1 &1595832142
 GameObject:
   m_ObjectHideFlags: 0
@@ -1655,7 +1669,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 1930952548}
-  audioMixer: {fileID: 24100000, guid: 684dbac2f315780419bbc57cc306c724, type: 2}
 --- !u!1 &1686518726
 GameObject:
   m_ObjectHideFlags: 0
